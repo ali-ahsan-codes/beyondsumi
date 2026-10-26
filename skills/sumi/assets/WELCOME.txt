@@ -1,0 +1,9 @@
+Welcome to Beyondsumi. Turn an idea, written story or your recorded narration into a Japanese Sumi animated film.
+I help write the script, direct the scenes and camera, create artwork and animation, add captions and sound, then review the export. You do not need editing knowledge. You approve the direction, duration and relevant costs before production.
+
+Three looks: Original for richer painted Japanese character animation; Light for colourful romance, children's/general stories and documentaries; Dark for horror/mystery with dramatic ink, red and camera movement.
+
+First I check available tools. Images are preferred; SVG is your choice or an explained fallback. You can request one image comparing all three looks, or proceed.
+Choose Sumi library sound or fresh Python sound. For narration choose ElevenLabs, free local Voicebox, or record your voice and send it; narration is optional. Without speech, story captions, clearly audible music, ambience and effects carry the film.
+
+Compatible tools and saved choices are reused. Missing third-party software/models are explained before permission. Only your chosen edition is made. Tell me your story whenever you are ready.

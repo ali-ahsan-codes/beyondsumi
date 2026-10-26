@@ -1,0 +1,11 @@
+{
+  "schema": "sumi-voice-map-v1",
+  "status": "pending",
+  "narration": {
+    "provider": "ask",
+    "source": null
+  },
+  "roles": [],
+  "dialogue": [],
+  "instructions": "For each role record id/name/actual performer/provider/voice-model or file. For each dialogue record speaker_id, exact_text, file or take_id, source start/end, output frame start/end, delivery, timing precision and visible lip-sync or justified offscreen view. No credentials or transcript bulk. Preserve original audio; no automatic voice generation."
+}

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Beyondsumi · Your film</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" href="brand.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <a class="brand" href="index.html" aria-label="Beyondsumi film studio"
+          ><img
+            src="logo.png"
+            width="46"
+            height="46"
+            alt="Beyondsumi ink portal logo"
+          /><span>Beyondsumi</span></a
+        >
+        <div class="private">
+          <span class="dot"></span> Your private screening room
+        </div>
+      </header>
+      <main>
+        <section class="intro">
+          <div>
+            <p class="eyebrow">
+              THE FILM ROOM <span>／</span> <span id="edition">01</span>
+            </p>
+            <h1 id="title">Your film.</h1>
+            <p class="subtitle" id="subtitle"></p>
+          </div>
+          <div class="edition-note">
+            <span class="tiny">CRAFTED WITH SUMI</span
+            ><span>Painted stories.<br />Made to be watched.</span>
+          </div>
+        </section>
+        <section class="screening" aria-label="Watch and download">
+          <div class="player-column">
+            <div class="player-shell">
+              <video
+                id="player"
+                controls
+                playsinline
+                preload="metadata"
+                aria-label="Film preview"
+              ></video>
+              <div id="playback-error" hidden>
+                We couldn’t play this file here. Download the MP4 to watch it in
+                your video player.
+              </div>
+            </div>
+            <div class="player-caption">
+              <span
+                ><i class="dot"></i><strong id="selected-style"></strong></span
+              ><span id="playback-label">Preview your film · sound on</span>
+            </div>
+          </div>
+          <aside class="download-panel">
+            <p class="eyebrow">YOUR SELECTED FILM</p>
+            <h2 id="selection-name"></h2>
+            <p class="selection-copy" id="selection-description"></p>
+            <dl>
+              <div>
+                <dt>Picture</dt>
+                <dd id="dimensions"></dd>
+              </div>
+              <div>
+                <dt>Length</dt>
+                <dd id="duration"></dd>
+              </div>
+              <div>
+                <dt>Format</dt>
+                <dd id="format"></dd>
+              </div>
+              <div>
+                <dt>File size</dt>
+                <dd id="size"></dd>
+              </div>
+            </dl>
+            <a id="download" class="primary" download
+              ><span>Download MP4</span><span aria-hidden="true">↓</span></a
+            >
+            <p class="download-note" id="download-note"></p>
+            <div class="review-status">
+              <span id="status"></span>
+              <p id="review-note"></p>
+            </div>
+          </aside>
+        </section>
+        <section class="editions">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">THE COLLECTION</p>
+              <h2 id="collection-title">Choose your edition.</h2>
+            </div>
+            <p id="collection-copy"></p>
+          </div>
+          <div class="cards" id="cards"></div>
+        </section>
+        <section class="closing">
+          <img src="logo.png" width="36" height="36" alt="" />
+          <p>A little ink.<br /><em>A world of stories.</em></p>
+          <span>KEEP THE FILM.<br />COME BACK FOR THE NEXT STORY.</span>
+        </section>
+      </main>
+      <footer>
+        <span>Beyondsumi <span class="muted">/ Sumi film studio</span></span
+        ><a href="brand.html">Brand kit ↗</a
+        ><span id="local-note"
+          >Public demo · your own projects can stay local</span
+        >
+      </footer>
+    </div>
+    <noscript
+      >This dashboard needs JavaScript for film selection. Your MP4 files are in
+      the media folder.</noscript
+    >
+    <script src="../site-data.js"></script>
+    <script src="data.js"></script>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

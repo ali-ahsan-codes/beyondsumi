@@ -1,0 +1,296 @@
+{
+  "id": "journey",
+  "name": "The Open Road",
+  "duration": 20.461541666666665,
+  "metrical_body_seconds": 18.46153846153846,
+  "bpm": 104,
+  "bars": 8,
+  "seed": 20261529,
+  "intensity": 0.7,
+  "source": "original Python composition",
+  "synthetic_instruments": true,
+  "provider_calls": 0,
+  "events": [
+    {
+      "part": "harmony",
+      "at": 0.0,
+      "duration": 5.165384615384615,
+      "midi": [
+        48,
+        52,
+        55
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 0.0,
+      "duration": 1.0096153846153846,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 0.8653846153846153,
+      "duration": 1.0096153846153846,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 1.7307692307692306,
+      "duration": 1.0096153846153846,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 2.3076923076923075,
+      "duration": 1.0096153846153846,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 3.173076923076923,
+      "duration": 1.0096153846153846,
+      "midi": 74
+    },
+    {
+      "part": "melody",
+      "at": 3.7499999999999996,
+      "duration": 1.0096153846153846,
+      "midi": 79
+    },
+    {
+      "part": "harmony",
+      "at": 4.615384615384615,
+      "duration": 5.165384615384615,
+      "midi": [
+        55,
+        59,
+        62
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 4.615384615384615,
+      "duration": 1.0096153846153846,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 5.48076923076923,
+      "duration": 1.0096153846153846,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 6.346153846153846,
+      "duration": 1.0096153846153846,
+      "midi": 74
+    },
+    {
+      "part": "melody",
+      "at": 6.9230769230769225,
+      "duration": 1.0096153846153846,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 7.788461538461538,
+      "duration": 1.0096153846153846,
+      "midi": 81
+    },
+    {
+      "part": "melody",
+      "at": 8.365384615384615,
+      "duration": 1.0096153846153846,
+      "midi": 79
+    },
+    {
+      "part": "harmony",
+      "at": 9.23076923076923,
+      "duration": 5.165384615384615,
+      "midi": [
+        57,
+        60,
+        64
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 9.23076923076923,
+      "duration": 1.0096153846153846,
+      "midi": 74
+    },
+    {
+      "part": "melody",
+      "at": 10.096153846153845,
+      "duration": 1.0096153846153846,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 10.96153846153846,
+      "duration": 1.0096153846153846,
+      "midi": 81
+    },
+    {
+      "part": "melody",
+      "at": 11.538461538461537,
+      "duration": 1.0096153846153846,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 12.403846153846153,
+      "duration": 1.0096153846153846,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 12.98076923076923,
+      "duration": 1.0096153846153846,
+      "midi": 76
+    },
+    {
+      "part": "harmony",
+      "at": 13.846153846153845,
+      "duration": 5.165384615384615,
+      "midi": [
+        53,
+        57,
+        60
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 13.846153846153845,
+      "duration": 1.0096153846153846,
+      "midi": 81
+    },
+    {
+      "part": "melody",
+      "at": 14.71153846153846,
+      "duration": 1.0096153846153846,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 15.576923076923075,
+      "duration": 1.0096153846153846,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 16.153846153846153,
+      "duration": 1.0096153846153846,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 17.019230769230766,
+      "duration": 1.0096153846153846,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 17.596153846153843,
+      "duration": 1.0096153846153846,
+      "midi": 76
+    },
+    {
+      "part": "rhythm",
+      "at": 0.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 1.1538461538461537,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 2.3076923076923075,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 3.4615384615384612,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 4.615384615384615,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 5.769230769230768,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 6.9230769230769225,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 8.076923076923077,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 9.23076923076923,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 10.384615384615383,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 11.538461538461537,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 12.69230769230769,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 13.846153846153845,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 14.999999999999998,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 16.153846153846153,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 17.307692307692307,
+      "duration": 0.65,
+      "kind": "drum"
+    }
+  ],
+  "review": "pending"
+}

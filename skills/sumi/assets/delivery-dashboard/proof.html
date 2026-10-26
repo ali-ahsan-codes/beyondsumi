@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Beyondsumi · Motion proof</title>
+    <link rel="stylesheet" href="brand.css" />
+    <link rel="stylesheet" href="proof.css" />
+  </head>
+  <body class="bs-page">
+    <header class="bs-masthead">
+      <a class="bs-brand" href="brand.html"
+        ><img src="logo.png" alt="Beyondsumi ink portal" /><span>Beyondsumi</span></a
+      ><span>Motion proof</span>
+    </header>
+    <main>
+      <h1 id="title">Motion proof</h1>
+      <p>A short silent comparison. Choose Play motion to watch the existing frames.</p>
+      <section data-state="ready">
+        <div class="stage">
+          <img
+            src="poster.png"
+            data-before="before.png"
+            data-after="poster.png"
+            data-motion="motion.webp"
+            width="960"
+            height="540"
+            alt="Motion proof preview"
+          />
+        </div>
+        <div class="controls">
+          <button
+            id="before"
+            onclick="stop(this.closest('section'), true, window.SUMI_PROOF.before_label)"
+          >
+            First frame</button
+          ><button data-play onclick="play(this)">Play motion</button
+          ><button onclick="stop(this.closest('section'))">Stop</button
+          ><a href="proof.mp4?download=1" download="proof.mp4">Download MP4</a>
+        </div>
+        <progress max="6" value="0" aria-label="Preview progress"></progress>
+        <div class="status" role="status" aria-live="polite">
+          Preview ready · choose Play motion.
+        </div>
+      </section>
+      <p id="details"></p>
+      <p>
+        Technical review only. The MP4 is unchanged. This silent preview does not assess narration
+        or sound.
+      </p>
+    </main>
+    <noscript>Open proof.mp4 to view the original media.</noscript>
+    <script src="data.js"></script>
+    <script src="proof-player.js"></script>
+  </body>
+</html>

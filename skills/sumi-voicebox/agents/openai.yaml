@@ -1,0 +1,5 @@
+interface:
+  display_name: "Beyondsumi · Voicebox"
+  short_description: "Set up free local narration"
+  default_prompt: "Use $sumi-voicebox to guide this task step by step, reuse available tools and explain any missing setup before installation."
+  brand_color: "#A93A2A"

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "sumi",
+  "version": "1.0.0",
+  "description": "Guided Sumi films with image-first artwork, optional SVG, character dialogue, local sound and branded HD delivery.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Beyondsumi",
+        "shortDescription": "Guided ink animation studio",
+        "longDescription": "Write and approve the story and direction, prepare complete character references, then create Sumi Original, Sumi Light or Sumi Dark. Japanese Sumi identity throughout, with local sound and review. Earlier movement methods remain historical techniques.",
+        "capabilities": [],
+        "defaultPrompt": "Use Sumi to help me create an original animated story. Guide setup if this is my first use, then recommend a style and present the direction and duration for approval."
+      }
+    }
+  }
+}

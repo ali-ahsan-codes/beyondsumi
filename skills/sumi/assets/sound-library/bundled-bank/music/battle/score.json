@@ -1,0 +1,392 @@
+{
+  "id": "battle",
+  "name": "Hold The Entrance",
+  "duration": 18.0,
+  "metrical_body_seconds": 16.0,
+  "bpm": 120,
+  "bars": 8,
+  "seed": 20262034,
+  "intensity": 0.7,
+  "source": "original Python composition",
+  "synthetic_instruments": true,
+  "provider_calls": 0,
+  "events": [
+    {
+      "part": "harmony",
+      "at": 0.0,
+      "duration": 4.55,
+      "midi": [
+        38,
+        45,
+        50
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 0.0,
+      "duration": 0.875,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 0.75,
+      "duration": 0.875,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 1.5,
+      "duration": 0.875,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 2.0,
+      "duration": 0.875,
+      "midi": 67
+    },
+    {
+      "part": "melody",
+      "at": 2.75,
+      "duration": 0.875,
+      "midi": 65
+    },
+    {
+      "part": "melody",
+      "at": 3.25,
+      "duration": 0.875,
+      "midi": 67
+    },
+    {
+      "part": "harmony",
+      "at": 4.0,
+      "duration": 4.55,
+      "midi": [
+        43,
+        50,
+        55
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 4.0,
+      "duration": 0.875,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 4.75,
+      "duration": 0.875,
+      "midi": 67
+    },
+    {
+      "part": "melody",
+      "at": 5.5,
+      "duration": 0.875,
+      "midi": 65
+    },
+    {
+      "part": "melody",
+      "at": 6.0,
+      "duration": 0.875,
+      "midi": 67
+    },
+    {
+      "part": "melody",
+      "at": 6.75,
+      "duration": 0.875,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 7.25,
+      "duration": 0.875,
+      "midi": 62
+    },
+    {
+      "part": "harmony",
+      "at": 8.0,
+      "duration": 4.55,
+      "midi": [
+        41,
+        48,
+        53
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 8.0,
+      "duration": 0.875,
+      "midi": 65
+    },
+    {
+      "part": "melody",
+      "at": 8.75,
+      "duration": 0.875,
+      "midi": 67
+    },
+    {
+      "part": "melody",
+      "at": 9.5,
+      "duration": 0.875,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 10.0,
+      "duration": 0.875,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 10.75,
+      "duration": 0.875,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 11.25,
+      "duration": 0.875,
+      "midi": 62
+    },
+    {
+      "part": "harmony",
+      "at": 12.0,
+      "duration": 4.55,
+      "midi": [
+        45,
+        52,
+        57
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 12.0,
+      "duration": 0.875,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 12.75,
+      "duration": 0.875,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 13.5,
+      "duration": 0.875,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 14.0,
+      "duration": 0.875,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 14.75,
+      "duration": 0.875,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 15.25,
+      "duration": 0.875,
+      "midi": 67
+    },
+    {
+      "part": "rhythm",
+      "at": 0.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 0.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 1.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 1.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 2.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 2.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 3.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 3.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 4.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 4.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 5.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 5.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 6.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 6.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 7.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 7.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 8.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 8.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 9.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 9.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 10.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 10.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 11.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 11.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 12.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 12.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 13.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 13.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 14.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 14.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 15.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 15.5,
+      "duration": 0.65,
+      "kind": "drum"
+    }
+  ],
+  "review": "pending"
+}

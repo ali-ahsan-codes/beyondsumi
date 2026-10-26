@@ -1,0 +1,200 @@
+{
+  "id": "dread",
+  "name": "The Empty Square",
+  "duration": 30.235291666666665,
+  "metrical_body_seconds": 28.235294117647058,
+  "bpm": 68,
+  "bars": 8,
+  "seed": 20261933,
+  "intensity": 0.7,
+  "source": "original Python composition",
+  "synthetic_instruments": true,
+  "provider_calls": 0,
+  "events": [
+    {
+      "part": "harmony",
+      "at": 0.0,
+      "duration": 7.608823529411764,
+      "midi": [
+        33,
+        39,
+        45
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 0.0,
+      "duration": 1.5441176470588234,
+      "midi": 57
+    },
+    {
+      "part": "melody",
+      "at": 1.3235294117647058,
+      "duration": 1.5441176470588234,
+      "midi": 63
+    },
+    {
+      "part": "melody",
+      "at": 2.6470588235294117,
+      "duration": 1.5441176470588234,
+      "midi": 58
+    },
+    {
+      "part": "melody",
+      "at": 3.5294117647058822,
+      "duration": 1.5441176470588234,
+      "midi": 57
+    },
+    {
+      "part": "melody",
+      "at": 4.852941176470588,
+      "duration": 1.5441176470588234,
+      "midi": 64
+    },
+    {
+      "part": "melody",
+      "at": 5.735294117647059,
+      "duration": 1.5441176470588234,
+      "midi": 63
+    },
+    {
+      "part": "harmony",
+      "at": 7.0588235294117645,
+      "duration": 7.608823529411764,
+      "midi": [
+        34,
+        40,
+        46
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 7.0588235294117645,
+      "duration": 1.5441176470588234,
+      "midi": 58
+    },
+    {
+      "part": "melody",
+      "at": 8.382352941176471,
+      "duration": 1.5441176470588234,
+      "midi": 57
+    },
+    {
+      "part": "melody",
+      "at": 9.705882352941176,
+      "duration": 1.5441176470588234,
+      "midi": 64
+    },
+    {
+      "part": "melody",
+      "at": 10.588235294117647,
+      "duration": 1.5441176470588234,
+      "midi": 63
+    },
+    {
+      "part": "melody",
+      "at": 11.911764705882351,
+      "duration": 1.5441176470588234,
+      "midi": 58
+    },
+    {
+      "part": "melody",
+      "at": 12.794117647058822,
+      "duration": 1.5441176470588234,
+      "midi": 57
+    },
+    {
+      "part": "harmony",
+      "at": 14.117647058823529,
+      "duration": 7.608823529411764,
+      "midi": [
+        33,
+        38,
+        44
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 14.117647058823529,
+      "duration": 1.5441176470588234,
+      "midi": 64
+    },
+    {
+      "part": "melody",
+      "at": 15.441176470588236,
+      "duration": 1.5441176470588234,
+      "midi": 63
+    },
+    {
+      "part": "melody",
+      "at": 16.764705882352942,
+      "duration": 1.5441176470588234,
+      "midi": 58
+    },
+    {
+      "part": "melody",
+      "at": 17.647058823529413,
+      "duration": 1.5441176470588234,
+      "midi": 57
+    },
+    {
+      "part": "melody",
+      "at": 18.970588235294116,
+      "duration": 1.5441176470588234,
+      "midi": 57
+    },
+    {
+      "part": "melody",
+      "at": 19.852941176470587,
+      "duration": 1.5441176470588234,
+      "midi": 63
+    },
+    {
+      "part": "harmony",
+      "at": 21.176470588235293,
+      "duration": 7.608823529411764,
+      "midi": [
+        33,
+        39,
+        45
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 21.176470588235293,
+      "duration": 1.5441176470588234,
+      "midi": 58
+    },
+    {
+      "part": "melody",
+      "at": 22.5,
+      "duration": 1.5441176470588234,
+      "midi": 57
+    },
+    {
+      "part": "melody",
+      "at": 23.823529411764707,
+      "duration": 1.5441176470588234,
+      "midi": 57
+    },
+    {
+      "part": "melody",
+      "at": 24.705882352941174,
+      "duration": 1.5441176470588234,
+      "midi": 63
+    },
+    {
+      "part": "melody",
+      "at": 26.02941176470588,
+      "duration": 1.5441176470588234,
+      "midi": 58
+    },
+    {
+      "part": "melody",
+      "at": 26.91176470588235,
+      "duration": 1.5441176470588234,
+      "midi": 57
+    }
+  ],
+  "review": "pending"
+}

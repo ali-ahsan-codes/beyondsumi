@@ -1,0 +1,200 @@
+{
+  "id": "tender",
+  "name": "Tender Connection",
+  "duration": 28.666666666666668,
+  "metrical_body_seconds": 26.666666666666668,
+  "bpm": 72,
+  "bars": 8,
+  "seed": 20261024,
+  "intensity": 0.7,
+  "source": "original Python composition",
+  "synthetic_instruments": true,
+  "provider_calls": 0,
+  "events": [
+    {
+      "part": "harmony",
+      "at": 0.0,
+      "duration": 7.216666666666667,
+      "midi": [
+        48,
+        52,
+        55
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 0.0,
+      "duration": 1.4583333333333335,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 1.25,
+      "duration": 1.4583333333333335,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 2.5,
+      "duration": 1.4583333333333335,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 3.3333333333333335,
+      "duration": 1.4583333333333335,
+      "midi": 81
+    },
+    {
+      "part": "melody",
+      "at": 4.583333333333334,
+      "duration": 1.4583333333333335,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 5.416666666666667,
+      "duration": 1.4583333333333335,
+      "midi": 76
+    },
+    {
+      "part": "harmony",
+      "at": 6.666666666666667,
+      "duration": 7.216666666666667,
+      "midi": [
+        53,
+        57,
+        60
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 6.666666666666667,
+      "duration": 1.4583333333333335,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 7.916666666666667,
+      "duration": 1.4583333333333335,
+      "midi": 81
+    },
+    {
+      "part": "melody",
+      "at": 9.166666666666668,
+      "duration": 1.4583333333333335,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 10.0,
+      "duration": 1.4583333333333335,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 11.25,
+      "duration": 1.4583333333333335,
+      "midi": 74
+    },
+    {
+      "part": "melody",
+      "at": 12.083333333333334,
+      "duration": 1.4583333333333335,
+      "midi": 72
+    },
+    {
+      "part": "harmony",
+      "at": 13.333333333333334,
+      "duration": 7.216666666666667,
+      "midi": [
+        55,
+        59,
+        62
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 13.333333333333334,
+      "duration": 1.4583333333333335,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 14.583333333333334,
+      "duration": 1.4583333333333335,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 15.833333333333334,
+      "duration": 1.4583333333333335,
+      "midi": 74
+    },
+    {
+      "part": "melody",
+      "at": 16.666666666666668,
+      "duration": 1.4583333333333335,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 17.916666666666668,
+      "duration": 1.4583333333333335,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 18.75,
+      "duration": 1.4583333333333335,
+      "midi": 76
+    },
+    {
+      "part": "harmony",
+      "at": 20.0,
+      "duration": 7.216666666666667,
+      "midi": [
+        48,
+        52,
+        55
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 20.0,
+      "duration": 1.4583333333333335,
+      "midi": 74
+    },
+    {
+      "part": "melody",
+      "at": 21.25,
+      "duration": 1.4583333333333335,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 22.5,
+      "duration": 1.4583333333333335,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 23.333333333333332,
+      "duration": 1.4583333333333335,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 24.583333333333336,
+      "duration": 1.4583333333333335,
+      "midi": 79
+    },
+    {
+      "part": "melody",
+      "at": 25.416666666666668,
+      "duration": 1.4583333333333335,
+      "midi": 81
+    }
+  ],
+  "review": "pending"
+}

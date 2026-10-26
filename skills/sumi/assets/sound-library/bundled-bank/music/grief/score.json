@@ -1,0 +1,200 @@
+{
+  "id": "grief",
+  "name": "What Remains",
+  "duration": 32.0,
+  "metrical_body_seconds": 30.0,
+  "bpm": 64,
+  "bars": 8,
+  "seed": 20261226,
+  "intensity": 0.7,
+  "source": "original Python composition",
+  "synthetic_instruments": true,
+  "provider_calls": 0,
+  "events": [
+    {
+      "part": "harmony",
+      "at": 0.0,
+      "duration": 8.05,
+      "midi": [
+        45,
+        48,
+        52
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 0.0,
+      "duration": 1.640625,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 1.40625,
+      "duration": 1.640625,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 2.8125,
+      "duration": 1.640625,
+      "midi": 71
+    },
+    {
+      "part": "melody",
+      "at": 3.75,
+      "duration": 1.640625,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 5.15625,
+      "duration": 1.640625,
+      "midi": 67
+    },
+    {
+      "part": "melody",
+      "at": 6.09375,
+      "duration": 1.640625,
+      "midi": 69
+    },
+    {
+      "part": "harmony",
+      "at": 7.5,
+      "duration": 8.05,
+      "midi": [
+        53,
+        57,
+        60
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 7.5,
+      "duration": 1.640625,
+      "midi": 71
+    },
+    {
+      "part": "melody",
+      "at": 8.90625,
+      "duration": 1.640625,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 10.3125,
+      "duration": 1.640625,
+      "midi": 67
+    },
+    {
+      "part": "melody",
+      "at": 11.25,
+      "duration": 1.640625,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 12.65625,
+      "duration": 1.640625,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 13.59375,
+      "duration": 1.640625,
+      "midi": 69
+    },
+    {
+      "part": "harmony",
+      "at": 15.0,
+      "duration": 8.05,
+      "midi": [
+        50,
+        53,
+        57
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 15.0,
+      "duration": 1.640625,
+      "midi": 67
+    },
+    {
+      "part": "melody",
+      "at": 16.40625,
+      "duration": 1.640625,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 17.8125,
+      "duration": 1.640625,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 18.75,
+      "duration": 1.640625,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 20.15625,
+      "duration": 1.640625,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 21.09375,
+      "duration": 1.640625,
+      "midi": 72
+    },
+    {
+      "part": "harmony",
+      "at": 22.5,
+      "duration": 8.05,
+      "midi": [
+        45,
+        48,
+        52
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 22.5,
+      "duration": 1.640625,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 23.90625,
+      "duration": 1.640625,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 25.3125,
+      "duration": 1.640625,
+      "midi": 76
+    },
+    {
+      "part": "melody",
+      "at": 26.25,
+      "duration": 1.640625,
+      "midi": 72
+    },
+    {
+      "part": "melody",
+      "at": 27.65625,
+      "duration": 1.640625,
+      "midi": 71
+    },
+    {
+      "part": "melody",
+      "at": 28.59375,
+      "duration": 1.640625,
+      "midi": 69
+    }
+  ],
+  "review": "pending"
+}

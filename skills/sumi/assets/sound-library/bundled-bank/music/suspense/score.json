@@ -1,0 +1,392 @@
+{
+  "id": "suspense",
+  "name": "Before The Signal",
+  "duration": 19.142854166666666,
+  "metrical_body_seconds": 17.142857142857142,
+  "bpm": 112,
+  "bars": 8,
+  "seed": 20261832,
+  "intensity": 0.7,
+  "source": "original Python composition",
+  "synthetic_instruments": true,
+  "provider_calls": 0,
+  "events": [
+    {
+      "part": "harmony",
+      "at": 0.0,
+      "duration": 4.835714285714285,
+      "midi": [
+        38,
+        45,
+        50
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 0.0,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 0.8035714285714286,
+      "duration": 0.9375,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 1.6071428571428572,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 2.142857142857143,
+      "duration": 0.9375,
+      "midi": 63
+    },
+    {
+      "part": "melody",
+      "at": 2.946428571428571,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 3.482142857142857,
+      "duration": 0.9375,
+      "midi": 67
+    },
+    {
+      "part": "harmony",
+      "at": 4.285714285714286,
+      "duration": 4.835714285714285,
+      "midi": [
+        39,
+        45,
+        51
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 4.285714285714286,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 5.089285714285714,
+      "duration": 0.9375,
+      "midi": 63
+    },
+    {
+      "part": "melody",
+      "at": 5.892857142857142,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 6.428571428571429,
+      "duration": 0.9375,
+      "midi": 67
+    },
+    {
+      "part": "melody",
+      "at": 7.232142857142857,
+      "duration": 0.9375,
+      "midi": 63
+    },
+    {
+      "part": "melody",
+      "at": 7.767857142857142,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "harmony",
+      "at": 8.571428571428571,
+      "duration": 4.835714285714285,
+      "midi": [
+        38,
+        43,
+        50
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 8.571428571428571,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 9.375,
+      "duration": 0.9375,
+      "midi": 67
+    },
+    {
+      "part": "melody",
+      "at": 10.178571428571429,
+      "duration": 0.9375,
+      "midi": 63
+    },
+    {
+      "part": "melody",
+      "at": 10.714285714285714,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 11.517857142857142,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 12.053571428571429,
+      "duration": 0.9375,
+      "midi": 69
+    },
+    {
+      "part": "harmony",
+      "at": 12.857142857142858,
+      "duration": 4.835714285714285,
+      "midi": [
+        38,
+        45,
+        50
+      ]
+    },
+    {
+      "part": "melody",
+      "at": 12.857142857142858,
+      "duration": 0.9375,
+      "midi": 63
+    },
+    {
+      "part": "melody",
+      "at": 13.660714285714286,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 14.464285714285715,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 15.0,
+      "duration": 0.9375,
+      "midi": 69
+    },
+    {
+      "part": "melody",
+      "at": 15.803571428571429,
+      "duration": 0.9375,
+      "midi": 62
+    },
+    {
+      "part": "melody",
+      "at": 16.339285714285715,
+      "duration": 0.9375,
+      "midi": 63
+    },
+    {
+      "part": "rhythm",
+      "at": 0.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 0.3482142857142857,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 1.0714285714285714,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 1.419642857142857,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 2.142857142857143,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 2.4910714285714284,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 3.2142857142857144,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 3.5625,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 4.285714285714286,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 4.633928571428571,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 5.357142857142857,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 5.705357142857142,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 6.428571428571429,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 6.776785714285714,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 7.5,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 7.848214285714286,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 8.571428571428571,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 8.919642857142858,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 9.642857142857142,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 9.991071428571429,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 10.714285714285714,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 11.0625,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 11.785714285714285,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 12.133928571428571,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 12.857142857142858,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 13.205357142857144,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 13.928571428571429,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 14.276785714285715,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 15.0,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 15.348214285714286,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 16.071428571428573,
+      "duration": 0.65,
+      "kind": "drum"
+    },
+    {
+      "part": "rhythm",
+      "at": 16.419642857142858,
+      "duration": 0.65,
+      "kind": "drum"
+    }
+  ],
+  "review": "pending"
+}

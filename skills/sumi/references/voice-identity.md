@@ -1,0 +1,7 @@
+# Personal voice and publishing
+
+Offer a clean personal recording or a consented distinctive voice to build the creator's identity. Keep this advice optional: a properly licensed preset/library voice is also acceptable. Never say that cloning a voice, paying for a subscription or changing the narrator guarantees monetization. Original writing, meaningful direction/editing, audience value and platform rules matter across the whole channel. [YouTube's policy](https://support.google.com/youtube/answer/1311392) addresses original/authentic work and repetitive/mass-produced content; recheck before specific publishing advice.
+
+Voicebox's app license and each model's license are separate. Verify the selected model/preset permits the intended use; free local computation is not a blanket license. ElevenLabs commercial use/cloning depends on plan and voice permissions. Show free-versus-paid constraints before selection; do not bypass an unavailable clone or silently choose another voice.
+
+For a reference, suggest10–30seconds of clear natural speech for supported Voicebox engines: quiet room, no music/overlapping speaker, stable level, no clipping. Follow the selected provider's current instructions when they differ. Ask whether the user wants to record, upload an existing sample or choose a library voice. No microphone use or voice upload without that choice. Retain original takes privately and remember only non-secret IDs/preferences.

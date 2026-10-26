@@ -1,0 +1,17 @@
+{
+  "name": "Beyondsumi",
+  "identity": "Brush Monogram",
+  "method": "One built-in image-generation call for the transparent symbol; native serif wordmark assembly.",
+  "symbol": "logo.png",
+  "wordmark": "wordmark.svg",
+  "symbol_sha256": "b05c38bdbdeb8b42666caf9d7f622e50b7fdfe8d4883664a168889c3ee613fd3",
+  "meaning": "An upward calligraphic b with an S-shaped counter and vermilion artist seal: ink becoming a moving story.",
+  "interface_palette": {
+    "carbon": "#161818",
+    "paper": "#F5F2E9",
+    "vermilion": "#A93A2A"
+  },
+  "shared_theme": "brand.css",
+  "logo_not_film_watermark": true,
+  "wordmark_format": "Self-contained SVG embedding the original PNG; lettering uses Georgia or local serif fallback. The mark is not vector traced."
+}
