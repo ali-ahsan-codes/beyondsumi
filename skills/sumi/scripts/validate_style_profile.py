@@ -10,6 +10,7 @@ import re
 from pathlib import Path
 
 from plan_provenance import plan_digest
+from motion_detail import smooth_24
 from sumi_catalog import STYLES, uses_current_catalog
 
 LIGHT_PALETTE = {
@@ -95,6 +96,7 @@ def validate(data, root, stage="assets"):
             return None
         return (digest, "full-image" if roi == [0, 0, *dims] else tuple(roi)) if digest else None
 
+    smooth = smooth_24(data)
     config = obj(data.get("style_profile"))
     need(config.get("schema") == 1, "style_profile.schema must be 1")
     need(config.get("status") == "authored_spec_only",
@@ -152,9 +154,11 @@ def validate(data, root, stage="assets"):
             target_fps, target_pose = ((30, 15) if current_original else (28, 14)) if rate_original else (24, 12)
             if adaptive_original:
                 target_fps, target_pose = 30, (20 if living_original else 30)
+            if smooth:
+                target_pose = 24
             need(data.get("output_fps") == target_fps and shot.get("pose_fps") == target_pose and shot.get("simulation_fps") == target_fps,
                  sid + f": new film requires {target_fps}fps output with {target_pose}fps character poses")
-            need(obj(settings.get("cadence")).get("exposure_frames") == (1 if adaptive_original else 2),
+            need(obj(settings.get("cadence")).get("exposure_frames") == (1 if adaptive_original or smooth else 2),
                  sid + ": exposure unit differs from the selected version/style")
             if rate_original:
                 need(obj(settings.get("cadence")).get("character_update_fps") == target_pose
@@ -165,7 +169,7 @@ def validate(data, root, stage="assets"):
             match = re.fullmatch(r"(\d+)\.(\d+)\.(\d+)", release)
             if living_original:
                 from validate_living_frames import validate_original_states
-                errors.extend(validate_original_states(shot, root))
+                errors.extend(validate_original_states(shot, root, state_fps=24 if smooth else 20, whole_drawings_only=smooth))
             elif adaptive_original:
                 drawing = obj(settings.get("original_drawings"))
                 label = sid + ": Original variable exposures"
@@ -276,10 +280,15 @@ def validate(data, root, stage="assets"):
             profile = obj(config.get("brush_ink"))
             cadence = ({"output_fps":60,"character_update_fps":12,"edge_boil_fps":8} if legacy_brush else
                        {"output_fps":24,"character_update_fps":12,"edge_boil_fps":12,"exposure_frames":2})
+            if smooth and not legacy_brush:
+                cadence.update(character_update_fps=24, exposure_frames=1, exposure_policy="24-in-24")
+                from validate_living_frames import validate_original_states
+                errors.extend(validate_original_states(shot, root, state_fps=24, output_fps=24,
+                    source_key="motion_drawings", whole_drawings_only=True))
             need(data.get("output_fps") == cadence["output_fps"], sid + ": output clock differs from selected profile")
             need(obj(profile.get("cadence")) == cadence, sid + ": declared cadence differs from selected profile")
             need(obj(settings.get("cadence")) == cadence, sid + ": shot cadence differs from profile")
-            need(shot.get("pose_fps") == 12 and shot.get("simulation_fps") == cadence["output_fps"],
+            need(shot.get("pose_fps") == (24 if smooth else 12) and shot.get("simulation_fps") == cadence["output_fps"],
                  sid + ": character and material clocks differ from profile")
             need(profile.get("depth_z") == DEPTH_Z, sid + ": declare four stage depth planes")
             policy = obj(profile.get("budget"))
@@ -304,6 +313,11 @@ def validate(data, root, stage="assets"):
                  sid + ": source image IDs must be unique")
             identities = {region(image, sid + ": visual source") for image in source_images}
             identities.discard(None)
+            if smooth:
+                drawn = {region(row, sid + ": smoother pose source")
+                         for row in seq(obj(settings.get("motion_drawings")).get("source_images"))}
+                need(None not in drawn and drawn.issubset(identities),
+                     sid + ": smoother pose art must be included in the normal hashed source inventory and image budget")
             if legacy_brush:
                 need(len(identities) <= 4, sid + ": historical source image budget exceeded")
             if not identities:

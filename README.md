@@ -65,6 +65,12 @@ Prepared images, complete action states, supported small movements and reusable 
 
 Multilingual story development uses your chosen assistant. Spoken languages depend on the voice model; 80+ language workflows need compatible models. Hindi, Urdu, Arabic and English are examples, not a claim that every Voicebox engine supports all of them. [Narration routes](skills/sumi/references/narration.md).
 
+## Choose motion detail and lip-sync for each film
+
+Before image-based artwork, choose the style’s default motion detail or smoother movement with up to 24 actual pose/in-between drawings per animated second. Original keeps its 30 fps output; Light/Dark keep 24 fps. Extra artwork may use more image calls, tokens and processing. Review a separate drawing/call budget before each standalone call or bounded batch. SVG keeps its default without this extra motion question.
+
+Choose narrator, character dialogue or both, and whether visible speaking characters should use lip-sync. Mouth/expression artwork is planned to the final dialogue recording; offscreen narration does not move unrelated mouths. [Motion, image-budget and lip-sync guide](skills/sumi/references/motion-detail.md).
+
 ## Your film has its own dashboard
 
 Each requested film is delivered as an **HD H.264/AAC MP4**, editable source and a branded watch/download dashboard. See all three editions; unmade editions prepare agent-neutral requests without secretly starting production. A local dashboard needs its local server. [Try the public dashboard demo](https://beyondtahir.github.io/beyondsumi/dashboard/).
@@ -96,4 +102,4 @@ Beyondsumi was created by **Muhammad Tahir Ashraf (Beyond Tahir)** for people bu
 
 ## License and source scope
 
-First public release **1.0.0**. Code uses the root MIT license with preserved adjacent third-party notices. Original bundled Python audio has its own included permission. Finished demo films are examples and do not license extraction of separately licensed voice/effect sources. Dependencies, optional apps/models and imported media retain their own terms. [LICENSE](LICENSE) · [THIRD-PARTY.md](THIRD-PARTY.md).
+First public release **1.0.0**; current package **1.0.1**. Code uses the root MIT license with preserved adjacent third-party notices. Original bundled Python audio has its own included permission. Finished demo films are examples and do not license extraction of separately licensed voice/effect sources. Dependencies, optional apps/models and imported media retain their own terms. [LICENSE](LICENSE) · [THIRD-PARTY.md](THIRD-PARTY.md).

@@ -28,6 +28,8 @@ If length or telling mode is missing, the assistant asks how long, then narrator
 
 ## 4. Review the script and direction
 
+For every new image-based film you also choose the style’s usual motion detail or a smoother option with up to 24 real pose/in-between drawings per animated second. More drawings may need extra image calls, tokens and time; approve a clear image budget before generation. SVG keeps its default without that extra question. Choose whether visible dialogue should use lip-sync; narrator-only stories do not move unrelated mouths. [Motion and lip-sync choices](motion-detail.md).
+
 Read the full words first. Ask for changes in plain language. Then review scenes, estimated duration, recommended style, character voices and sound approach. If the complete story needs longer, choose the full version or a concrete short version. Production waits for your approval of that specific plan.
 
 ## 5. Approve and review the proof

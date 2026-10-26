@@ -1,5 +1,8 @@
 # Three-style project records
 
+Current per-video override: follow [motion-detail.md](motion-detail.md). The rates below are defaults. An approved image-route smoother mode uses 24 actual pose/in-between drawings per animated second (Original output remains30fps; Light/Dark remain24fps). Budget separate image calls and confirm visible-dialogue lip-sync. SVG keeps its default without the motion prompt. Preserve all other story, art, physics and sound gates.
+
+
 **24October2026 override for new4.6.1+ projects:** use [Living Frames](living-frames.md). Original30fps/20 designed character states per animated second (whole drawings or supported derived acting), alternating two/one-frame exposures; source generation remains action-driven and deliberate stillness is documented. Light/Dark retain24fps/on-twos. New shot plans record `animation_strategy` and hashed living-frame master/targets/anchors/masks/rig/clean-plate evidence where used. Older rate/exposure contracts below remain historical compatibility. Cadence checks do not inspect pixels.
 
 The primary catalogue is **Sumi Original, Sumi Light, Sumi Dark**. The exposure profile introduced in 4.1.0 is retained. Version 4.2.0 adds the [portable physics contract](physics-gate.md) and requires it in final-render preflight. Earlier 4.1.1 added instruction-level limb review. Focused initializer/exposure checks are recorded in release validation; they do not certify visual output. A schema is evidence bookkeeping, not visual judgement or an implementation of the described animation.

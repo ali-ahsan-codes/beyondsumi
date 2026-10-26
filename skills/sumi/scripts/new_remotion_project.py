@@ -10,6 +10,7 @@ from urllib.parse import unquote
 
 from sumi_catalog import VERSION, PLAN_COMPATIBILITY_VERSION, CATALOG_ID, STYLES, LEGACY_METHODS
 from validate_style_profile import LIGHT_PALETTE, DARK_PALETTE, DARK_RED
+from motion_detail import initial_choice
 
 
 def copy_guides(skill, destination, entrypoints):
@@ -56,11 +57,21 @@ def main():
     p.add_argument("--seconds", type=float, default=10)
     p.add_argument("--fps", type=int,
                    help="Original defaults to30fps/20 designed character states; Light/Dark to 24fps/12 paired states. Historical sources are preserved.")
+    p.add_argument("--art-route", choices=["images", "svg"], default="images")
+    p.add_argument("--motion-detail", choices=["default", "smooth24"])
+    p.add_argument("--motion-approval", default="", help="Actual project-only user choice receipt; never fabricated.")
     p.add_argument("--title", default="Production canvas")
     a = p.parse_args()
     if a.style and a.legacy_method:
         p.error("Choose a current style or explicit historical compatibility, not both.")
     chosen = a.style or ("sumi-original" if not a.legacy_method else None)
+    if a.art_route == "svg" and a.motion_detail:
+        p.error("SVG retains its default; omit --motion-detail.")
+    if a.motion_detail and not a.motion_approval.strip():
+        p.error("Record the user’s per-film motion choice with --motion-approval before selecting a mode.")
+    if a.legacy_method and a.motion_detail:
+        p.error("Do not reinterpret historical projects with a new motion choice.")
+    state_fps = 24 if a.motion_detail == "smooth24" else (20 if chosen == "sumi-original" else 12)
     if not math.isfinite(a.seconds) or not 0 < a.seconds <= 3600:
         p.error("seconds must be finite and between 0 and 3600")
     fps = a.fps if a.fps is not None else (STYLES[chosen]["default_output_fps"] if chosen else 30)
@@ -76,7 +87,7 @@ def main():
     if dest.exists() or dest.is_symlink():
         p.error("Destination already exists; choose a new folder.")
     helpers = ["validate_shot_plan.py", "validate_living_ink.py", "validate_style_profile.py",
-               "plan_provenance.py", "sumi_catalog.py", "validate_physics.py", "build_delivery.py", "living_frames.py", "validate_living_frames.py", "environment_motion.py", "validate_environment_plan.py", "make_motion_preview.py", "validate_title_timing.py"]
+               "plan_provenance.py", "sumi_catalog.py", "validate_physics.py", "build_delivery.py", "living_frames.py", "validate_living_frames.py", "environment_motion.py", "validate_environment_plan.py", "make_motion_preview.py", "validate_title_timing.py", "motion_detail.py"]
     required = [src / "package-lock.json", src / "src/index.tsx",
                 skill / "assets/procedural-audio/render_audio.py",
                 skill / "assets/motion-core/motion-core.mjs",
@@ -117,6 +128,11 @@ def main():
         shot.pop("method", None)
         if chosen:
             plan.update(catalog=CATALOG_ID, style=chosen, release_version=PLAN_COMPATIBILITY_VERSION, product_version=VERSION, physics_contract="sumi-physics-v1")
+            plan["motion_detail"] = initial_choice(chosen, a.art_route)
+            if a.motion_detail:
+                plan["motion_detail"].update(mode=a.motion_detail, status="approved",
+                    approval_record=a.motion_approval, target_states_per_second=state_fps)
+            plan["dialogue_animation"] = {"speech_mode": "pending", "lip_sync": "pending", "approval_record": "", "voice_map": "VOICE-MAP.json"}
             shot["physics"] = {"actions": [], "character_free_reason": ""}
             shot["environment"] = {"decision": "pending", "reason": "", "plan": None, "review": None, "visibility": None}
             shot["acting"] = {"status": "pending", "actors": [], "runtime_bindings": [], "coverage": [], "review": None}
@@ -134,8 +150,8 @@ def main():
                 settings["original_drawings"] = {"budget_mode": "action-driven",
                     "sequence_id": "", "source_images": [], "designed_states": [], "exposure_plan": [],
                     "deliberate_stillness": False, "stillness_reason": ""}
-                settings["cadence"] = {"output_fps": fps, "character_update_fps": 20, "exposure_frames": 1, "exposure_policy": "20-in-30", "source_time_model": "scene-first-designed-states"}
-                shot.update(pose_fps=20, simulation_fps=30)
+                settings["cadence"] = {"output_fps": fps, "character_update_fps": state_fps, "exposure_frames": 1, "exposure_policy": f"{state_fps}-in-30", "source_time_model": "scene-first-designed-states"}
+                shot.update(pose_fps=state_fps, simulation_fps=30)
             else:
                 profile.pop("original_preservation")
                 profile["brush_ink"]["palette"] = LIGHT_PALETTE if chosen == "sumi-light" else {**DARK_PALETTE, "dark_red": DARK_RED}
@@ -144,7 +160,15 @@ def main():
                     for role, z in zip(["far-background", "background", "subject", "foreground"],
                                        [-500, -150, 0, 150])
                 ]
-                shot.update(pose_fps=12, simulation_fps=24)
+                shot.update(pose_fps=state_fps, simulation_fps=24)
+                if a.motion_detail == "smooth24":
+                    cadence = {"output_fps":24, "character_update_fps":24, "edge_boil_fps":12,
+                               "exposure_frames":1, "exposure_policy":"24-in-24"}
+                    settings["cadence"] = cadence.copy()
+                    profile["brush_ink"]["cadence"] = cadence.copy()
+                    settings["motion_drawings"] = {"budget_mode":"action-driven", "sequence_id":"",
+                        "source_images":[], "designed_states":[], "exposure_plan":[],
+                        "deliberate_stillness":False, "stillness_reason":""}
             plan["style_profile"], shot["style_profile"] = profile, settings
             guides = {
                 "sumi-original": [("references/styles/sumi-original.md", "STYLE.md")],
@@ -170,6 +194,7 @@ def main():
             entries.append("references/supplied-narration.md")
             entries.append("references/dialogue-and-lip-sync.md")
             entries.append("references/new-project-intake.md")
+            entries.append("references/motion-detail.md")
             entries.append("references/reuse-and-context.md")
             entries.append("references/interface-brand.md")
             entries.append("references/delivery-dashboard.md")

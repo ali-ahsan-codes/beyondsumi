@@ -33,6 +33,14 @@ Original presentation: full-frame16:9 by default; source art/camera safe crop; c
 
 Chosen style, profile and required animation identity:
 
+Per-video motion choice (image route: default / smoother24; SVG: default without extra question), default vs selected state rate, actual output FPS and real user answer:
+
+Separate image-call/batch budget: purpose, new action/in-between/mouth drawings, sheet resolution, estimated vs maximum approved image calls, possible token/credit/time increase, approval receipt and actual usage. Stop before exceeding it:
+
+Current speech mode and visible-character lip-sync choice (on/off/not-applicable), role/final-audio map and mouth/expression image budget:
+
+The rates below are defaults; only the explicit approved image-route smoother choice overrides the character state rate. Preserve the style, connected whole poses, source budgets and actual motion/physics/sound review:
+
 Original: identify the preserved baseline and label the new30fps adaptation with action-driven drawings/exposures. Light/Dark: brush-ink-on-twos-v2, 24fps output and paired character exposures. Declare a shot-specific source budget, count atlas regions, and cover anticipation/contact/recovery. Original:30fps output, action-driven source budgets and variable exposures with declared sequence IDs and justified stillness. Dark: oversized splash-built character/world source art and stronger camera-led depth/reveal direction, not a recoloured Light performance.
 
 Observed reference passages (URL, time range, what changes); current user-directed adaptations; unknowns:

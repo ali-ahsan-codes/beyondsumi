@@ -1,5 +1,8 @@
 > Current: use `--style sumi-original|sumi-light|sumi-dark`. New Original adaptations use 30fps with action-driven sources and variable exposures; Light/Dark use 24fps/on-twos. Original historical browser sources keep their separate elapsed-time behavior. Dark permits selective dark-red accents under its current guide. These commands are for authorized future production; editing this guide starts no film.
 
+Current per-video override: follow [motion-detail.md](motion-detail.md). The rates below are defaults. An approved image-route smoother mode uses 24 actual pose/in-between drawings per animated second (Original output remains30fps; Light/Dark remain24fps). Budget separate image calls and confirm visible-dialogue lip-sync. SVG keeps its default without the motion prompt. Preserve all other story, art, physics and sound gates.
+
+
 # Bundled Remotion production workflow
 
 Sumi carries its own engine starter and helpers. This skill can create a video without another style skill or an installed Remotion skill. Optional host skills may add current engine guidance. The starter is scaffolding; the initializer is checked separately from finished-film behavior and are not a finished film or a visual template to repeat.

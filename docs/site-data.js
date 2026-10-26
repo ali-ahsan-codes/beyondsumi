@@ -1,11 +1,11 @@
 window.BEYONDSUMI = {
-  version: "1.0.0",
+  version: "1.0.1",
   owner: "beyondtahir",
   repo: "beyondsumi",
   repository: "https://github.com/beyondtahir/beyondsumi",
   website: "https://beyondtahir.github.io/beyondsumi/",
   download:
-    "https://github.com/beyondtahir/beyondsumi/releases/download/v1.0.0/beyondsumi-v1.0.0.zip",
+    "https://github.com/beyondtahir/beyondsumi/releases/download/v1.0.1/beyondsumi-v1.0.1.zip",
   mediaBase:
     "https://github.com/beyondtahir/beyondsumi/releases/download/v1.0.0/",
   demos: [

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "sumi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Guided Sumi films with image-first artwork, optional SVG, character dialogue, local sound and branded HD delivery.",
   "extensions": {
     "com.openai": {

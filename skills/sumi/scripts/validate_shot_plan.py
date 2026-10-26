@@ -124,6 +124,8 @@ def validate(data,root,stage='assets'):
     errors=validate_base(data,root,stage)
     shots=data.get('shots') if isinstance(data,dict) else None
     if uses_current_catalog(data):
+        from motion_detail import validate as validate_choices
+        errors.extend(validate_choices(data,root,stage))
         version=tuple(map(int,re.findall(r'\d+',str(data.get('release_version','0.0.0')))))
         if version >= (4,9,1):
             from validate_title_timing import validate as validate_titles

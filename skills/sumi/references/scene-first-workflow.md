@@ -1,5 +1,8 @@
 # Scene-first cinematic production — all three styles
 
+Current per-video override: follow [motion-detail.md](motion-detail.md). The rates below are defaults. An approved image-route smoother mode uses 24 actual pose/in-between drawings per animated second (Original output remains30fps; Light/Dark remain24fps). Budget separate image calls and confirm visible-dialogue lip-sync. SVG keeps its default without the motion prompt. Preserve all other story, art, physics and sound gates.
+
+
 Current shared workflow, updated24 October2026. Apply [Living Frames](living-frames.md) selectively in all three styles; retain complete-pose action preparation and the existing engine. Preserve the existing renderer, approved story/runtime, selected voice and each style's art identity. This extends the accepted Original scene-first method to Light/Dark; the example Marco scene is not a universal setting or pose budget.
 
 ## Before finished artwork

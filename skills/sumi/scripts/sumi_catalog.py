@@ -1,7 +1,7 @@
 """Current style identifiers; earlier movement methods are compatibility data only."""
 
-VERSION = "1.0.0"
-PLAN_COMPATIBILITY_VERSION = "5.1.2"  # Existing plan validation contracts, separate from public release tags.
+VERSION = "1.0.1"
+PLAN_COMPATIBILITY_VERSION = "5.1.3"
 CATALOG_ID = "three-styles-v4"
 STYLES = {
     "sumi-original": {

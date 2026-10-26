@@ -15,12 +15,12 @@ def _file(row,root):
     return digest if digest==row.get('sha256') else None
 
 
-def validate_original_states(shot,root):
-    root=Path(root).resolve();errors=[];d=shot.get('style_profile',{}).get('original_drawings',{});label=str(shot.get('id'))+': Original20 states'
+def validate_original_states(shot,root,state_fps=20,output_fps=30,source_key="original_drawings",whole_drawings_only=False):
+    root=Path(root).resolve();errors=[];d=shot.get('style_profile',{}).get(source_key,{});label=str(shot.get('id'))+f': {state_fps} character states'
     def need(ok,msg):
         if not ok:errors.append(label+': '+msg)
     need(d.get('budget_mode')=='action-driven','new-source budget must remain action-driven')
-    need(shot.get('style_profile',{}).get('cadence',{}).get('exposure_policy')=='20-in-30','declare20-in-30 exposure policy')
+    need(shot.get('style_profile',{}).get('cadence',{}).get('exposure_policy')==f'{state_fps}-in-{output_fps}',f'declare {state_fps}-in-{output_fps} exposure policy')
     if d.get('deliberate_stillness') is True:
         need(bool(str(d.get('stillness_reason','')).strip()),'stillness reason required');return errors
     sources={r.get('id'):_file(r.get('file',r.get('image')),root) for r in d.get('source_images',[]) if isinstance(r,dict)}
@@ -29,6 +29,8 @@ def validate_original_states(shot,root):
         sid=row.get('id');need(isinstance(sid,str) and sid not in states,'unique designed state IDs required')
         source=sources.get(row.get('source_id'));need(bool(source),'state source hash missing/stale')
         kind=row.get('kind');need(kind in {'whole-drawing','derived-character'},'state must be a drawing or supported derived character motion')
+        if whole_drawings_only:
+            need(kind=='whole-drawing','smooth24 requires actual distinct pose/in-between drawings; camera, grain and derived micro-motion are not extra pose art')
         roi=row.get('roi_xywh');roi=tuple(roi) if isinstance(roi,list) else None
         signature=(source,roi)
         if kind=='derived-character':
@@ -39,16 +41,16 @@ def validate_original_states(shot,root):
             need(isinstance(values,dict) and all(re.fullmatch(r'(hair|cloth|breath|eye|brow|mouth|tear|hand|body)_[A-Za-z0-9_]+',k) for k in values),'camera/environment-only parameters cannot count as character states')
             signature+=(json.dumps(values,sort_keys=True),json.dumps(row.get('target_ids'),sort_keys=True))
         identities[sid]=signature;states[sid]=row
-    entries=d.get('exposure_plan',[]);first=round(shot.get('start',0)*30);last=round(shot.get('end',0)*30);cursor=first;used=[];k=0
+    entries=d.get('exposure_plan',[]);first=round(shot.get('start',0)*output_fps);last=round(shot.get('end',0)*output_fps);cursor=first;used=[];k=0
     while cursor < last and k < len(entries):
-        e=entries[k];offset=character_clock(cursor-first)['state'];end=min(last,first+math.ceil((offset+1)*30/20))
-        need(e.get('start_frame')==cursor and e.get('end_frame')==end,'contiguous alternating two/one-frame exposures required')
+        e=entries[k];offset=character_clock(cursor-first,output_fps,state_fps)['state'];end=min(last,first+math.ceil((offset+1)*output_fps/state_fps))
+        need(e.get('start_frame')==cursor and e.get('end_frame')==end,'contiguous exposures at the selected character clock required')
         need(e.get('state_id') in states,'missing designed character state')
         used.append(identities.get(e.get('state_id')));cursor=end;k+=1
     need(cursor==last and k==len(entries) and bool(entries),'complete exposure coverage required')
-    window=min(20,len(used))
+    window=min(state_fps,len(used))
     if window:
-        for i in range(len(used)-window+1):need(None not in used[i:i+window] and len(set(used[i:i+window]))==window,'repeated/aliased states do not provide20 distinct character states per second')
+        for i in range(len(used)-window+1):need(None not in used[i:i+window] and len(set(used[i:i+window]))==window,f'repeated/aliased states do not provide {state_fps} distinct character states per second')
     return errors
 
 

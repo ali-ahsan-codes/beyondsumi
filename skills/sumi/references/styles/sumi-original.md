@@ -1,5 +1,8 @@
 # Sumi Original
 
+The cadence below is the **default**. Follow [per-video motion and lip-sync choices](../motion-detail.md) before image artwork: offer the default or smoother 24 actual pose/in-between drawings/s with an approved separate image-call budget. SVG keeps this default without that prompt. Retain this style’s art identity and output FPS.
+
+
 Apply [shared expression and action continuity](../expression-and-action-continuity.md): emotional primary acting, source-supported face/eyes/hands, connected action/contact, per-source runtime coverage and actual-export review. Preserve this style's cadence and visual identity.
 
 Apply [scene-first cinematic production](../scene-first-workflow.md) and the [Original adapter](../original-scene-first.md). New adaptations use30fps output with20 designed character states/s and purposeful sources. Read [Living Frames](../living-frames.md) and [pacing/role voices](../original-pacing-and-voices.md). New full-scene generation is not required for every state; compatible checked layers can provide derived acting states. Deliberate stillness is documented separately. Preserve historical films and the Sumi-e identity below.

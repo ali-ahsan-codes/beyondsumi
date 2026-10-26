@@ -1,6 +1,6 @@
 # Character dialogue and lip-sync · all three styles
 
-Distinguish **offscreen narrator prose** from **words spoken by a character** before voice generation or artwork. Map each speaking role, exact approved words, language, emotional delivery and source. Use `assets/templates/VOICE-MAP.json` in the project. If no character speaks, skip this setup entirely.
+Distinguish **offscreen narrator prose** from **words spoken by a character** before voice generation or artwork. Map each speaking role, exact approved words, language, emotional delivery and source. Use `assets/templates/VOICE-MAP.json` in the project. For each new video follow [the motion/lip-sync intake](motion-detail.md): offer visible-speaker lip-sync on/off, recommend on for character dialogue, and record the current answer. If no character speaks, record not-applicable and skip mouth-art setup; do not flap unrelated mouths to narration. Include any separate mouth/expression image calls in the approved artwork budget.
 
 For ElevenLabs/Voicebox, cast direct dialogue to the character rather than leaving every line in the narrator's performance. Reuse suitable approved voices and complete takes; request permission for paid new takes/substitutions with the exact text/model/estimate. Use only controls supported by the selected engine/endpoint. Do not send dialogue tags blindly to a model that reads them aloud. Preserve narrator wording and separately approved role lines without doubling them.
 
