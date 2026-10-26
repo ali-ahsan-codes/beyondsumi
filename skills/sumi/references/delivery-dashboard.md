@@ -35,7 +35,7 @@ Use a new output folder for a revision. The packager refuses to overwrite. It cr
 
 ## Presentation and downloads
 
-The dashboard uses the **Beyondsumi** wordmark and Beyondartist-directed Ink Portal logo. Its identity is the delivery interface, not a compulsory watermark or recolouring of any film. Original/Light/Dark films retain their selected art and palette. Preserve the internal `sumi` command/folder for compatibility; use Beyondsumi as the requested display brand.
+The dashboard uses the **Beyondsumi** wordmark and Beyondartist-directed Ink Portal logo. Its identity is the delivery interface, not a compulsory watermark or recolouring of any film. Final MP4s must have no added visible AI-generated/AI-assisted label, assistant/provider watermark or Beyondsumi logo. Keep approved story titles/captions. Inspect source artwork and final-frame samples for unintended lettering or visible marks before delivery; record any unperformed check honestly. Original/Light/Dark films retain their selected art and palette. Preserve the internal `sumi` command/folder for compatibility; use Beyondsumi as the requested display brand.
 
 Keep the product simple: project title, player, actual file details, clear download and rendered editions. Avoid implementation jargon in the interface. Show specific review limitations briefly when a film is a draft. Do not invent publication or artistic approval. The generated brush symbol is a transparent raster PNG, not a fully editable vector. Exact Beyondsumi lettering is finished in native type. It is a newly developed identity, not an externally verified trademark.
 
