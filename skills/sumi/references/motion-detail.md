@@ -6,9 +6,13 @@ Ask for these choices on **every new video**, including a story/prompt, supplied
 
 For Sumi Original, Light and Dark, offer **Default** or **Smoother, up to 24 distinct pose/in-between drawings per animated second** before generating artwork. Default Original is 30 output fps/20 designed character states per animated second; Light/Dark are 24 output fps/up to 12 paired states. Smoother Original retains 30 output fps with a 24-state exposure clock; smoother Light/Dark retain 24 output fps with one-frame character exposures. Their art, material, camera and sound identities remain distinct.
 
-Suggested question: “This style normally uses [20 / up to 12] character motion states per animated second. Would you like the default, or smoother movement with up to 24 pose/in-between drawings per animated second? The smoother option may need more image calls, tokens, cost and processing. I’ll show the image budget before generation.”
+Suggested question for every new story, prompt or supplied-audio film: “This style’s default is [30 / 24] output frames per second with [20 / up to 12] character motion states per animated second. Would you like the default, or smoother movement with up to 24 pose/in-between drawings per animated second? The smoother option may need extra image calls, tokens, cost and processing. I’ll show the artwork/call budget before generation.”
 
 **This is actual character artwork and performance, not an FPS-only switch.** In active smoother passages prepare distinct connected whole-character poses/in-between drawings, including anticipation, weight transfer, contact, follow-through and settling. Generate additional matching pose artwork when required. Several drawings may share one checked sheet; crop only observed valid cells. Reuse exact compatible drawings/cycles. Camera movement, new grain, repeated stills, renaming files and hair-only rig changes do not count as additional full-action pose drawings. Secondary eyes/hair/cloth/breath still help but cannot replace the required action. Quiet holds remain deliberate and explained.
+
+Both choices must receive professional animation care. The default is not permission for frozen posters or rough movement. Plan connected poses and in-betweens, spacing/easing, believable weight and foot/grip contact, overlapping hair/cloth/breath and emotional faces; keep the selected style’s material and camera vocabulary. Time each movement to its story cause and the final speech/sound. More pose images must improve the action’s continuity, not just its count.
+
+Before a full batch, prove a difficult representative movement and any visible speaking passage at the selected detail. Review the actual animation at normal speed for popping, abrupt pose jumps, unwanted slides, unstable faces and mouth sync. If it is still awkward, repair the pose/timing/registration within the approved budget or ask for a bounded increase. A higher number or successful metadata check is not proof of professional smoothness.
 
 Record source drawings/regions, actual generation calls, derived states, reused exposures and output frames separately. Twenty-four drawings do not imply twenty-four API calls. Preserve final timing, identity, support, hand/leg mechanics and actual normal-speed proof. Density metadata does not certify smoothness.
 
@@ -23,6 +27,8 @@ Use `motion_detail.image_batches`: unique `id`, `purpose`, `new_pose_drawings`, 
 Keep SVG’s current style defaults. Do not ask the extra motion-detail question or automatically offer the 24-drawing increase on SVG. Record the route as SVG/default/not-applicable. If the user explicitly requests a different SVG treatment, plan that request separately; switching to generated images requires the image-route choice and budget above.
 
 ## Lip-sync on every video’s brief
+
+Lip-sync needs actual speech and a visible speaker. Narrated/spoken videos use it on visible speaking roles, matched to their final lines; music/SFX-only videos have no lip-sync. Offscreen narrator prose never makes unrelated story characters speak. Include speaking views and matching mouth/expression art in the approved direction when the story calls for them.
 
 Ask whether the story should use narrator only, character dialogue or both, and offer **lip-sync on/off for visible speaking characters**, recommending on for dialogue. A current explicit choice needs no repeat. For narration-only or no speech, explain that visible character lip-sync is not applicable; never move unrelated mouths to the narrator. This dialogue choice applies to SVG too; only the motion-detail prompt is exempt there.
 
