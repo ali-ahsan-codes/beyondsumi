@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "title": "Your story title",
+  "genre": "Adventure",
+  "aspect_ratio": "16:9",
+  "audience": "Who is this story for?",
+  "target_seconds": 30,
+  "logline": "One sentence: main character + goal + obstacle.",
+  "story": "Beginning: set up the character and world.\nMiddle: show the challenge and a meaningful choice.\nEnding: resolve the story and leave an emotional beat.",
+  "characters": "Name — age range, silhouette, face/hair, clothing, colours, personality, voice/language/pronunciation.",
+  "visual_style": "Ink & wash",
+  "palette": "Midnight blue, warm amber, paper ivory",
+  "fps": 24,
+  "voice_plan": "Narrator: language, age range, tone, pace, pronunciation. Characters: name, voice description, dialogue style.",
+  "music_notes": "Mood, instruments, energy, where music starts/stops; note any silence.",
+  "rights_note": "Media credits and rights/permission notes.",
+  "assets": {},
+  "scenes": [
+    {
+      "id": "shot-01",
+      "title": "Opening image",
+      "slug": "EXT. PLACE · TIME",
+      "duration": 10,
+      "camera": "Wide establishing shot",
+      "action": "Describe setting, action, movement and important props.",
+      "narration": "Exact narrator words for this scene.",
+      "dialogue": "Character name: exact spoken line, or empty string.",
+      "sound": "Ambience, sound effect, music cue and purposeful silence.",
+      "transition": "Fade in"
+    },
+    {
+      "id": "shot-02",
+      "title": "The choice",
+      "slug": "INT. PLACE · TIME",
+      "duration": 10,
+      "camera": "Medium tracking shot",
+      "action": "What changes? Describe the character's action and reaction.",
+      "narration": "Exact narration, or empty string.",
+      "dialogue": "Character name: exact words, or empty string.",
+      "sound": "Ambience, music change, effect cue and silence.",
+      "transition": "Cut"
+    },
+    {
+      "id": "shot-03",
+      "title": "The payoff",
+      "slug": "EXT. PLACE · TIME",
+      "duration": 10,
+      "camera": "Slow push-in",
+      "action": "Show the outcome, emotional payoff and final visual beat.",
+      "narration": "Closing line, or empty string.",
+      "dialogue": "Character name: exact words, or empty string.",
+      "sound": "Music resolution, ambience, effects and final quiet beat.",
+      "transition": "Fade out"
+    }
+  ]
+}

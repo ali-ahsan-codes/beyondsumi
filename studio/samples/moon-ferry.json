@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "title": "The Moon Ferry",
+  "genre": "Fantasy",
+  "aspect_ratio": "16:9",
+  "audience": "Family, ages 8+",
+  "target_seconds": 32,
+  "story": "Every evening, an old ferryman rows a small boat across a lake that reflects the moon. One night a girl arrives carrying a paper star for her absent brother. The ferryman lets the star drift on the water. Its reflection becomes a shining path, and the girl understands that love can travel farther than a boat.",
+  "logline": "A paper star and a quiet ferryman help a girl send love across a moonlit lake.",
+  "characters": "Nura — thoughtful girl with a paper star, blue shawl, soft speaking voice. Ferryman — elderly, silver-bearded, patient, speaks rarely.",
+  "visual_style": "Ink & wash",
+  "palette": "Deep indigo, moon silver, pale lilac, one amber paper star",
+  "fps": 24,
+  "voice_plan": "Narrator: lyrical and restrained. Nura: one sincere line. Ferryman: no dialogue; communicate through a nod.",
+  "music_notes": "Slow plucked strings, water-bowl resonance, and a breathy flute. Keep plenty of silence; broaden gently as the reflected path appears.",
+  "rights_note": "Original procedural preview artwork. Replace or supplement with owned artwork for production.",
+  "assets": {},
+  "scenes": [
+    {"id":"moon-1","title":"The evening crossing","slug":"EXT. MOON LAKE · NIGHT","duration":9,"camera":"Wide establishing shot","action":"A little wooden ferry glides across a still lake. A giant moon shimmers in its reflection.","narration":"Each evening, the ferryman crossed a lake that held the moon.","dialogue":"","sound":"Soft oar dip, quiet water, a sparse plucked-string motif.","transition":"Slow reveal from deep blue."},
+    {"id":"moon-2","title":"A paper star","slug":"EXT. FERRY · NIGHT","duration":10,"camera":"Over-the-shoulder","action":"Nura offers the ferryman a paper star. He lowers it to the water; the little star floats beside the boat.","narration":"Nura had brought a small star for someone she missed.","dialogue":"Nura: Will it find him?","sound":"Paper rustle, one clear water drop, hold a breath of silence.","transition":"Cut from star to its reflection."},
+    {"id":"moon-3","title":"A path of light","slug":"EXT. MOON LAKE · NIGHT","duration":13,"camera":"Slow crane up","action":"The star's reflection grows into a silver path across the lake. Nura smiles as the boat follows it toward the far shore.","narration":"The water carried her love farther than any boat could go.","dialogue":"","sound":"Flute enters, water brightens, music resolves softly with the boat in silhouette.","transition":"Fade to silver."}
+  ]
+}

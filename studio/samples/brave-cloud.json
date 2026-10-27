@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "title": "The Brave Little Cloud",
+  "genre": "Children's story",
+  "aspect_ratio": "16:9",
+  "audience": "Children, ages 4–8",
+  "target_seconds": 32,
+  "story": "A tiny cloud is afraid to rain because it thinks it will disappear. Below, a thirsty field waits. When a small bird tells the cloud what the flowers need, the cloud gathers courage. Its gentle rain fills the stream, and it discovers that sharing its water makes it larger in everyone's memory.",
+  "logline": "A shy cloud discovers that sharing its rain helps a dry field bloom.",
+  "characters": "Pip — small, round pearl-grey cloud with expressive eyes; light, friendly voice. Piko — little ochre bird; quick, encouraging voice. Flowers — simple coloured shapes.",
+  "visual_style": "Flat colour",
+  "palette": "Sky blue, soft grey, sunflower gold, bright meadow green",
+  "fps": 24,
+  "voice_plan": "Narrator: playful and reassuring. Pip: gentle childlike voice; Piko: upbeat and concise. Use a locally recorded voice or an installed system voice.",
+  "music_notes": "Bouncy pizzicato at the start, delicate raindrop taps in the middle, warm flute and light percussion for the bloom. No loud thunder.",
+  "rights_note": "Original procedural preview artwork. Replace or supplement with owned artwork for production.",
+  "assets": {},
+  "scenes": [
+    {"id":"cloud-1","title":"A cloud afraid of rain","slug":"EXT. BLUE SKY · DAY","duration":9,"camera":"Wide establishing shot","action":"Pip drifts above a dry golden meadow. A little bird circles below and points to thirsty flowers.","narration":"Pip was a cloud with a very big worry: what if rain made him disappear?","dialogue":"Piko: The flowers are waiting, Pip.","sound":"Gentle breeze, small bird chirp; playful pizzicato starts lightly.","transition":"Float in from the upper edge."},
+    {"id":"cloud-2","title":"One brave raindrop","slug":"EXT. SKY ABOVE MEADOW · DAY","duration":10,"camera":"Close-up / insert","action":"Pip takes a breath. One shining raindrop falls, then another, as his face changes from worry to wonder.","narration":"Pip took one small breath and let one little raindrop go.","dialogue":"Pip: I can try.","sound":"Soft raindrop taps, no thunder; give the first drop space before the music returns.","transition":"Follow the falling raindrop down."},
+    {"id":"cloud-3","title":"A meadow says thank you","slug":"EXT. MEADOW · DAY","duration":13,"camera":"Slow push-in","action":"The meadow brightens with flowers. Pip becomes a broad, soft cloud while Piko dances between the blossoms.","narration":"The flowers lifted their faces. Pip felt bigger, not smaller.","dialogue":"","sound":"Warm flute, gentle patter fades into birdsong; joyful but calm ending.","transition":"Dissolve into bright sky."}
+  ]
+}
