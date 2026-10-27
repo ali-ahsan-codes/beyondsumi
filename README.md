@@ -7,11 +7,13 @@
 
 ALI Animation is a self-contained browser app for story-first animation. Write the story and characters, direct scene-by-scene camera angles, add voice/music/effects and reference art, preview the animation, and export a portable JSON project, PNG frames, and WebM video. Projects and media remain on your device.
 
-## Start in minutes
+## Start in minutes — no AI model
 
-1. Copy/download the repository and install Python 3.8+.
-2. Open a terminal in `studio/` and run `python -m http.server 8765 --bind 127.0.0.1` (Windows: `py -m http.server 8765 --bind 127.0.0.1`).
-3. Open `http://127.0.0.1:8765` in Firefox, Chrome, or Edge. After files are present, the studio works offline. See [INSTALL.md](INSTALL.md).
+1. Download/extract the project and install Python 3.8+ (standard library only).
+2. From the project root, run `python install.py` (Windows: `py -3 install.py`; macOS/Linux: `python3 install.py`). This starts the local Studio server and opens your browser.
+3. If it does not open automatically, visit the printed `http://127.0.0.1:...` address. Press **Ctrl+C** in the terminal to stop the server.
+
+`install.py` with no options launches the offline Studio. `--skills-root` is only for the separate optional assistant skills and is not needed for ALI Animation Studio. See [INSTALL.md](INSTALL.md) or the [standalone HTML guide](ALI-Animation-Guide.html).
 
 ## What is included
 

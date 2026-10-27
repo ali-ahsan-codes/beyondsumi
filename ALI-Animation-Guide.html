@@ -40,11 +40,11 @@
           <h2 class="section-title">Install and launch</h2>
           <ol class="steps">
             <li><b>Download the project.</b> Get a ZIP/release or copy the repository folder onto the computer where you will create stories. Extract it. Keep the folder together so the sample projects remain available.</li>
-            <li><b>Open a terminal in the <code>studio</code> folder.</b> In File Explorer/Finder, open the project's <code>studio</code> folder. Open Terminal or Command Prompt there. You can also type <code>cd path/to/project/studio</code> in a terminal, replacing the example with your folder's actual path.</li>
-            <li><b>Start the local file server.</b> On Windows run <code>py -m http.server 8765 --bind 127.0.0.1</code>. On macOS/Linux run <code>python3 -m http.server 8765 --bind 127.0.0.1</code>. If <code>py</code> is not recognised, try <code>python -m http.server 8765 --bind 127.0.0.1</code>.</li>
-            <li><b>Open the app.</b> In the same computer's browser, visit <code>http://127.0.0.1:8765</code>. The Studio page should appear. Leave the terminal open while working; return to it and press <code>Ctrl+C</code> to stop the server when finished.</li>
+            <li><b>Open a terminal in the project root.</b> This is the folder containing <code>install.py</code>. The Studio is model-free: no AI model, account, API key, cloud service, or Python package is required.</li>
+            <li><b>Launch the Studio.</b> On Windows run <code>py -3 install.py</code> (or <code>python install.py</code> if using an activated virtual environment). On macOS/Linux run <code>python3 install.py</code>.</li>
+            <li><b>Use the browser.</b> The launcher starts a loopback-only local server and tries to open the Studio automatically. If needed, visit the URL printed in the terminal (normally <code>http://127.0.0.1:8765</code>). Keep the terminal open during use and press <code>Ctrl+C</code> to stop the server.</li>
           </ol>
-          <div class="note"><b>Important:</b> Run the server from inside <code>studio/</code>, not from the repository root, and do not open <code>index.html</code> as a <code>file://</code> URL. This app loads sample projects with local browser fetches. The loopback address keeps the server on your computer; do not expose it to a public network.</div>
+          <div class="note"><b>Optional manual alternative:</b> If you prefer not to use the launcher, run <code>py -m http.server 8765 --bind 127.0.0.1</code> (Windows) or <code>python3 -m http.server 8765 --bind 127.0.0.1</code> (macOS/Linux) from inside <code>studio/</code>. Do not open <code>index.html</code> as a <code>file://</code> URL; the app loads samples with local browser fetches. The server is local to your computer and should not be exposed to a public network.</div>
         </section>
         <section id="use">
           <h2 class="section-title">Everyday workflow</h2>
@@ -79,6 +79,7 @@
           <p class="intro">You normally use the app UI. These files are for running it, understanding it, customising it, or testing it.</p>
           <div class="card"><h3>Repository map</h3><pre class="tree">ALI Animation/
 ├── ALI-Animation-Guide.html   This standalone installation/user/file guide
+├── install.py                 Model-free local Studio launcher
 ├── README.md                  Project overview and quick start
 ├── INSTALL.md                 Detailed installation, UI workflow, limitations
 ├── LICENSE                    Main source-code licence
@@ -134,8 +135,8 @@
         <section id="troubleshooting">
           <h2 class="section-title">Troubleshooting</h2>
           <div class="grid">
-            <div class="mini"><b>The samples do not appear</b><p>Confirm the server was started from <code>studio/</code> and open the local <code>http://127.0.0.1:8765</code> address, not a <code>file://</code> page.</p></div>
-            <div class="mini"><b>The browser says the page is unavailable</b><p>Keep the terminal server running. If port 8765 is busy, start with 8766 and open <code>http://127.0.0.1:8766</code>.</p></div>
+            <div class="mini"><b>The samples do not appear</b><p>Use the launcher from the project root (the folder containing <code>install.py</code>), or use the manual server command above from <code>studio/</code>. Open the printed local address, not a <code>file://</code> page.</p></div>
+            <div class="mini"><b>The browser says the page is unavailable</b><p>Keep the terminal open while the Studio is in use. The launcher selects another local port if 8765 is busy and prints its URL; use that exact address.</p></div>
             <div class="mini"><b>I cannot hear speech</b><p>Device speech preview depends on browser/OS voices. Upload a narration recording if you need predictable playback and export.</p></div>
             <div class="mini"><b>Video export is missing or fails</b><p>Try an up-to-date desktop Firefox, Chrome, or Edge. First test a short story; project JSON and PNG frame downloads do not require video recording.</p></div>
             <div class="mini"><b>My uploaded files disappeared</b><p>Browser autosave does not retain media. Import your last exported project JSON or upload the files again, then export a fresh JSON backup.</p></div>
@@ -145,9 +146,9 @@
         <section id="roman-urdu" class="urdu">
           <h2 class="section-title">Roman Urdu — mukhtasar tareeqa</h2>
           <ol>
-            <li>Project download/extract karein; terminal <code>studio</code> folder mein kholain.</li>
-            <li>Windows: <code>py -m http.server 8765 --bind 127.0.0.1</code>. Mac/Linux: <code>python3 -m http.server 8765 --bind 127.0.0.1</code>.</li>
-            <li>Browser mein <code>http://127.0.0.1:8765</code> kholain. Terminal band na karein; kaam ke baad <code>Ctrl+C</code> dabayein.</li>
+            <li>Project download/extract karein; terminal project root mein kholain, jahan <code>install.py</code> mojood hai.</li>
+            <li>Windows: <code>py -3 install.py</code>. Mac/Linux: <code>python3 install.py</code>.</li>
+            <li>Launcher browser khol dega; zaroorat par terminal mein diya gaya local URL kholain. Terminal band na karein; kaam ke baad <code>Ctrl+C</code> dabayein.</li>
             <li><b>Samples</b> se kahani chunain ya <b>New project</b> banayein. <b>Story</b> mein kahani/kirdar likhein; <b>Direction</b> mein har shot ka camera, action aur duration set karein.</li>
             <li><b>Sound &amp; voice</b> mein apni narration/music/effects upload karein. <b>Assets</b> mein reference image add karein. <b>Preview</b> mein kahani check karein.</li>
             <li><b>Export project JSON</b> se backup banayein; <b>Save frame</b> se PNG aur <b>Export video</b> se supported WebM file download karein. Upload ki hui media ko bachane ke liye JSON export zaroor karein.</li>

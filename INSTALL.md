@@ -4,29 +4,30 @@ For the standalone, illustrated HTML walkthrough, open [ALI-Animation-Guide.html
 
 **ALI Animation Studio** is a local browser-based animation/storyboard app. It has no AI, account, API key, npm package, Python package, or network dependency. Browser preview, project JSON and supported WebM recording happen on your own computer. The older `skills/` assistant workflow in this repository is a separate legacy toolkit; you do not need it for ALI Animation Studio.
 
-## Quick install
+## Quick install — no AI model required
 
-1. Download/extract this repository, or copy the `studio` folder onto the computer you will use. After the files are on disk, disconnecting from the internet is fine.
-2. Install Python 3.8+ if you do not already have it. Python is used only as a tiny local file server; the animation app itself has no Python packages.
-3. Open a terminal/Command Prompt in the repository's `studio` folder and run:
+1. Download/extract the repository. Once the files are on your computer, disconnecting from the internet is fine.
+2. Install Python 3.8+ if needed. Python's standard library is all that is used; there are no packages or models to install.
+3. Open PowerShell/Terminal in the **project root** (the folder containing `install.py`) and run:
 
    **Windows**
    ```powershell
-   py -m http.server 8765 --bind 127.0.0.1
+   py -3 install.py
    ```
+   If you already activated a virtual environment, `python install.py` works too.
 
    **macOS / Linux**
    ```sh
-   python3 -m http.server 8765 --bind 127.0.0.1
+   python3 install.py
    ```
 
-4. Open **http://127.0.0.1:8765** in a current Firefox, Chrome, or Edge browser. Keep the terminal open while using the app. Stop it with **Ctrl+C**.
+4. The script starts a local-only server and opens the Studio in your browser. If it does not open automatically, visit the URL printed in the terminal (normally **http://127.0.0.1:8765**). Keep the terminal open while using the app; press **Ctrl+C** to stop it.
 
-If `py` is not recognised on Windows, try `python -m http.server 8765 --bind 127.0.0.1`. If port 8765 is occupied, use another number (for example 8766) in both the command and the URL. Do not expose this local server to a public network; the loopback binding keeps it on your computer.
+This default launch path does not install or call an AI model. `--skills-root` is an optional, separate installer for legacy assistant integrations; you do not need it to use ALI Animation Studio. If the default port is busy, the launcher selects another available local port and prints its URL. The server listens only on your computer.
 
 ## Roman Urdu — istemal ka tareeqa
 
-- `studio` folder mein terminal khol kar upar wala command chalayein. Browser mein `http://127.0.0.1:8765` khol lein.
+- Project root (jahan `install.py` hai) mein terminal khol kar upar diya gaya command chalayein. Launcher browser khol dega; zaroorat par terminal mein diya gaya local URL khol lein.
 - **Samples** se 4 example stories mein se koi chunain. **Story** tab mein title, kahani, kirdar aur duration badlein.
 - **Direction** tab mein har scene ka camera angle, action, narration, dialogue, sound notes aur seconds set karein. **＋ Add scene** se shot barhayein.
 - **Sound & voice** tab mein apni voice recording, music aur sound effects upload karein. **Assets** tab mein apni reference image dalein. Sirf apna ya ijazat wala media istemal karein.

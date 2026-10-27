@@ -1,17 +1,16 @@
-# Welcome to ALI Animation
+# ALI Animation — start here
 
-For step-by-step help, choose [your assistant installation guide](INSTALL.md), then [make your first film](skills/sumi/references/beginner-use.md).
+## Model-free Studio (recommended)
 
-Ask your agent to use `skills/sumi/SKILL.md`. It routes setup, a new film or a revision without loading every guide. The first-use conversation is `skills/sumi/references/first-run-flow.md`; after that, use `new-project-intake.md` and saved choices.
+ALI Animation Studio is the offline story-animation app. It does not need an AI model, account, API key, package install, or internet connection after the files are downloaded.
 
-Images are preferred; SVG is your choice or an explained fallback. Ask for one comparison image across all three styles or proceed directly. Choose narration separately from Sumi-library/Python sound. No narration still gets story captions and an audible score/effects unless you request otherwise.
+From the project root, run:
 
-The optional installer copies all four authored skills to the host's documented skills directory:
+- **Windows:** `py -3 install.py` (or `python install.py` if your virtual environment is active)
+- **macOS/Linux:** `python3 install.py`
 
-```
-python3 install.py --skills-root /absolute/path/to/your/host/skills
-```
+The launcher starts a loopback-only local server and opens the Studio in your browser. Leave the terminal open while using it; press **Ctrl+C** to stop it. If needed, open the URL printed in the terminal. See [INSTALL.md](INSTALL.md) and the [standalone HTML guide](ALI-Animation-Guide.html) for UI instructions and file explanations.
 
-It checks local requirements without installing third-party software or models. Passive imports without hooks receive guidance at first invocation. Provider setup, downloads and paid takes require their selected scope; never paste keys into chat. No universal all-host installation claim is made.
+## Optional legacy assistant skills
 
-The user package contains12original Python music themes and synthesis/mixing code. Provider effect caches, recordings and credentials remain separate. See `THIRD-PARTY.md`. Film production follows script/direction/duration approval and produces only the requested edition, an HD MP4 and the branded watch/download dashboard.
+The separate `skills/` directory contains an older assistant-driven production toolkit. You do not need it for the offline Studio, and it is not a model-free workflow. Only install it if you use a compatible assistant host and specifically want those integrations. In that case, `install.py --skills-root PATH` installs the optional skills into that host's documented skills folder; choose the path for your host rather than guessing.
