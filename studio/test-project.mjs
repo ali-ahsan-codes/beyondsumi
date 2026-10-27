@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {cleanScene,validateProject,projectDuration,sceneAt,exportProject} from './project.mjs';
+const sampleIds=['lantern-keeper','last-seed','moon-ferry','brave-cloud'];
+for(const id of sampleIds)test(`sample ${id} is valid and has a playable timeline`,async()=>{const project=JSON.parse(await readFile(new URL(`./samples/${id}.json`,import.meta.url),'utf8'));assert.equal(validateProject(project),true);assert.ok(project.scenes.length>=3);assert.ok(projectDuration(project)>0);assert.equal(sceneAt(project,0).index,0);assert.equal(sceneAt(project,projectDuration(project)).index,project.scenes.length-1);assert.ok(project.scenes.every((s)=>s.camera&&s.action&&s.narration&&s.sound));});
+test('rejects missing/unsupported project version and invalid scenes',()=>{assert.throws(()=>validateProject(null),/project JSON/);assert.throws(()=>validateProject({schema_version:2,scenes:[]}),/Unsupported/);assert.throws(()=>validateProject({schema_version:1,scenes:[]}),/1–100/);assert.throws(()=>validateProject({schema_version:1,scenes:[{duration:0}]}),/duration/);assert.throws(()=>validateProject({schema_version:1,scenes:[{duration:121}]}),/duration/)});
+test('normalises scene values and bounds preview durations',()=>{assert.equal(cleanScene({duration:0},0).duration,8);assert.equal(cleanScene({duration:150},0).duration,120);assert.equal(cleanScene({duration:5,title:'Shot'},0).title,'Shot')});
+test('scene boundary belongs to the following scene; total endpoint stays in last scene',()=>{const p={scenes:[{duration:4},{duration:6}]};assert.equal(sceneAt(p,3.99).index,0);assert.equal(sceneAt(p,4).index,1);assert.equal(sceneAt(p,10).index,1);assert.equal(sceneAt(p,10).local,6)});
+test('export always has a schema version and the media payload',()=>{const result=exportProject({title:'A',scenes:[]},{voice:{name:'local.wav'}});assert.equal(result.schema_version,1);assert.equal(result.assets.voice.name,'local.wav');assert.ok(result.exported_at)});

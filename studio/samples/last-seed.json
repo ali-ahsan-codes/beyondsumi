@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "title": "The Last Seed",
+  "genre": "Fable",
+  "aspect_ratio": "16:9",
+  "audience": "Children and families, ages 6+",
+  "target_seconds": 32,
+  "story": "In a thirsty town, Sami finds one seed beneath a cracked fountain. The neighbours urge him to keep it safe, but he plants it in the square and shares his last cup of water. A green shoot appears. Everyone brings a little water, and the town grows a garden together.",
+  "logline": "A child shares the last cup of water with a seed, and teaches a dry town how to hope together.",
+  "characters": "Sami — curious child in a red scarf, small and determined; clear, gentle voice. Neighbours — varied silhouettes, supportive chorus.",
+  "visual_style": "Paper cutout",
+  "palette": "Terracotta, dusty cream, leaf green, sky blue",
+  "fps": 24,
+  "voice_plan": "Narrator: calm, bright storyteller. Sami: childlike but natural; one short line. Avoid imitating a real person.",
+  "music_notes": "Dry seed-shaker and soft hand drum at first; add plucked notes as each neighbour contributes water; airy flute at the garden reveal.",
+  "rights_note": "Original procedural preview artwork. Replace or supplement with owned artwork for production.",
+  "assets": {},
+  "scenes": [
+    {"id":"seed-1","title":"A town out of water","slug":"EXT. TOWN SQUARE · DAY","duration":9,"camera":"Wide establishing shot","action":"Sami kneels beside the cracked fountain and notices a single seed. Dust drifts through an empty square.","narration":"The town had forgotten the sound of rain. Sami found one tiny seed.","dialogue":"","sound":"Dry breeze, one soft seed rattle; music sparse and unhurried.","transition":"Fade up from parchment."},
+    {"id":"seed-2","title":"A little water","slug":"EXT. GARDEN PATCH · DAY","duration":10,"camera":"Close-up / insert","action":"Sami opens his palm, then pours a last cup of water into the soil. Neighbours watch, then step forward with small cups.","narration":"He could have kept his water. Instead, he made room for a beginning.","dialogue":"Sami: We can share.","sound":"Water trickle, cups set down one by one; a plucked rhythm gathers.","transition":"Match cut from falling drop to a green shoot."},
+    {"id":"seed-3","title":"The garden returns","slug":"EXT. TOWN SQUARE · MORNING","duration":13,"camera":"Slow push-in","action":"The seedling opens into a flourishing garden. Neighbours water together while Sami looks up into the bright sky.","narration":"One seed became a garden when everyone helped it grow.","dialogue":"","sound":"Birdsong, soft flute, gentle communal voices without words; warm final cadence.","transition":"Dissolve to a leaf-shaped ending."}
+  ]
+}
