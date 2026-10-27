@@ -30,7 +30,7 @@
     a.setAttribute("aria-label", `Download ${f.style} MP4`);
     if (location.protocol !== "file:") a.href += "?download=1";
   }
-  document.title = `${data.title} · Beyondsumi`;
+  document.title = `${data.title} · ALI Animation`;
   $("title").textContent = data.title;
   $("subtitle").textContent = data.subtitle || "";
   $("collection-copy").textContent =
@@ -138,7 +138,7 @@
   heading.id = "request-heading";
   dialog.setAttribute("aria-labelledby", heading.id);
   intro.textContent =
-    "Send this request to the agent you use with Beyondsumi. Only this edition will be created after you send it.";
+    "Send this request to the agent you use with ALI Animation. Only this edition will be created after you send it.";
   field.readOnly = true;
   field.setAttribute("aria-label", "Recreation request");
   actions.className = "request-actions";
@@ -155,12 +155,12 @@
   function requestEdition(style) {
     heading.textContent = `Create ${style}`;
     const source = data.films[selected];
-    field.value = `Use the Beyondsumi / sumi skill to recreate “${data.title}” in ${style} only. Preserve this project's approved story, spoken wording, narration, duration (${source.duration.toFixed(3)} seconds), aspect ratio and required actions. Follow ${style}'s own art and motion guide. Reuse checked project assets when appropriate, and perform fresh character, physics, sound and export review. Do not create the other editions. Deliver the actual Full HD MP4 and update the Beyondsumi dashboard.\n\nProject context: ${typeof data.recreation_context === "string" ? data.recreation_context : data.recreation_context ? JSON.stringify(data.recreation_context, null, 2) : "Use the editable source project that supplied this dashboard. Ask me to locate it if unavailable."}\nExisting edition: ${source.style}\nExisting export SHA-256: ${source.sha256}\n\nThis is a user request when sent to the agent. If any source or approval is missing, inspect the project and ask only for what is missing. Do not invent access to this dashboard or its files.`;
+    field.value = `Use the ALI Animation / sumi skill to recreate “${data.title}” in ${style} only. Preserve this project's approved story, spoken wording, narration, duration (${source.duration.toFixed(3)} seconds), aspect ratio and required actions. Follow ${style}'s own art and motion guide. Reuse checked project assets when appropriate, and perform fresh character, physics, sound and export review. Do not create the other editions. Deliver the actual Full HD MP4 and update the ALI Animation dashboard.\n\nProject context: ${typeof data.recreation_context === "string" ? data.recreation_context : data.recreation_context ? JSON.stringify(data.recreation_context, null, 2) : "Use the editable source project that supplied this dashboard. Ask me to locate it if unavailable."}\nExisting edition: ${source.style}\nExisting export SHA-256: ${source.sha256}\n\nThis is a user request when sent to the agent. If any source or approval is missing, inspect the project and ask only for what is missing. Do not invent access to this dashboard or its files.`;
     notice.textContent = "No generation has started.";
     if (requestUrl) URL.revokeObjectURL(requestUrl);
     requestUrl = URL.createObjectURL(new Blob([field.value], { type: "text/plain;charset=utf-8" }));
     save.href = requestUrl;
-    save.download = `beyondsumi-${style.toLowerCase().replaceAll(" ", "-")}-request.txt`;
+    save.download = `ALI Animation-${style.toLowerCase().replaceAll(" ", "-")}-request.txt`;
     dialog.showModal();
   }
   copy.addEventListener("click", async () => {

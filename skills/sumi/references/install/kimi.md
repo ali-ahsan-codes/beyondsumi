@@ -1,8 +1,8 @@
-# Install Beyondsumi in Kimi Code CLI
+# Install ALI Animation in Kimi Code CLI
 
 This guide assumes Kimi Code CLI is already installed. If it is missing, ask the assistant to explain its official installation before you approve a download. Start with [the shared preparation steps](shared.md); do not run commands from inside the ZIP.
 
-1. Open the extracted Beyondsumi folder. You should see `install.py` and a folder named `skills`.
+1. Open the extracted ALI Animation folder. You should see `install.py` and a folder named `skills`.
 2. Open a terminal in that folder. On macOS, Finder can open a terminal at a folder; on Windows, open the folder in Explorer, type `powershell` in its address bar and press Enter. If you are unsure, show this guide to your local assistant and ask it to do this step.
 3. On macOS/Linux, copy this whole line and press Enter:
 

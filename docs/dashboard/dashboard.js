@@ -14,7 +14,7 @@
   const safe = (p) => {
     if (typeof p !== "string") return null;
     if (/^media\/[a-zA-Z0-9_.-]+$/.test(p)) return p;
-    return /^https:\/\/github\.com\/beyondtahir\/beyondsumi\/releases\/download\/v1\.0\.0\/beyondsumi-(original|light|dark|svg)\.mp4$/.test(
+    return /^https:\/\/github\.com\/ALI Animation\/ALI Animation\/releases\/download\/v1\.0\.0\/ALI Animation-(original|light|dark|svg)\.mp4$/.test(
       p,
     )
       ? p
@@ -38,7 +38,7 @@
     a.setAttribute("aria-label", `Download ${f.style} MP4`);
     if (location.protocol !== "file:") a.href += "?download=1";
   }
-  document.title = `${data.title} · Beyondsumi`;
+  document.title = `${data.title} · ALI Animation`;
   $("title").textContent = data.title;
   $("subtitle").textContent = data.subtitle || "";
   $("collection-copy").textContent =
@@ -151,7 +151,7 @@
   heading.id = "request-heading";
   dialog.setAttribute("aria-labelledby", heading.id);
   intro.textContent =
-    "Send this request to the agent you use with Beyondsumi. Only this edition will be created after you send it.";
+    "Send this request to the agent you use with ALI Animation. Only this edition will be created after you send it.";
   field.readOnly = true;
   field.setAttribute("aria-label", "Recreation request");
   actions.className = "request-actions";
@@ -168,14 +168,14 @@
   function requestEdition(style) {
     heading.textContent = `Create ${style}`;
     const source = data.films[selected];
-    field.value = `Use the Beyondsumi / sumi skill to help me make a new story in ${style}. I have seen the public demo “${data.title}”. Guide me from my idea through the desired duration, narration/dialogue choice, script and approved direction. Follow this style's own art, animation and sound workflow. Ask me for my idea or recording. Produce only this edition after approval, then deliver an HD MP4 and my own Beyondsumi dashboard. This public page does not provide an editable film project or permission for paid calls or installations.`;
+    field.value = `Use the ALI Animation / sumi skill to help me make a new story in ${style}. I have seen the public demo “${data.title}”. Guide me from my idea through the desired duration, narration/dialogue choice, script and approved direction. Follow this style's own art, animation and sound workflow. Ask me for my idea or recording. Produce only this edition after approval, then deliver an HD MP4 and my own ALI Animation dashboard. This public page does not provide an editable film project or permission for paid calls or installations.`;
     notice.textContent = "No generation has started.";
     if (requestUrl) URL.revokeObjectURL(requestUrl);
     requestUrl = URL.createObjectURL(
       new Blob([field.value], { type: "text/plain;charset=utf-8" }),
     );
     save.href = requestUrl;
-    save.download = `beyondsumi-${style.toLowerCase().replaceAll(" ", "-")}-request.txt`;
+    save.download = `ALI Animation-${style.toLowerCase().replaceAll(" ", "-")}-request.txt`;
     dialog.showModal();
   }
   copy.addEventListener("click", async () => {

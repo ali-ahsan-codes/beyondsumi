@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A complete, offline installation and user guide for ALI Animation Studio.">
+  <meta name="theme-color" content="#111a17">
+  <title>ALI Animation — Installation & User Guide</title>
+  <style>
+    :root{color-scheme:dark;--bg:#111a17;--panel:#192521;--panel2:#202d27;--ink:#f6f1e5;--muted:#b9c1b4;--line:#34463e;--gold:#e7bc72;--mint:#b8d4bd;--red:#db8c72;--max:1120px;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#27372c 0,transparent 38rem),var(--bg);color:var(--ink);line-height:1.65}a{color:var(--gold);text-underline-offset:4px}a:hover{color:#fff}code,pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}code{color:#e7d8b3;background:#101714;border:1px solid var(--line);border-radius:5px;padding:.12rem .35rem}pre{overflow-x:auto;background:#0c1310;border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;color:#ecdfc2;line-height:1.55}header,main,footer{width:min(var(--max),calc(100% - 36px));margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}.brand{display:flex;gap:.8rem;align-items:center;font-weight:750;letter-spacing:.02em;color:var(--ink);text-decoration:none}.brand img,.brand svg{width:40px;height:40px;flex:none}.top nav{display:flex;gap:1rem;flex-wrap:wrap;font-size:.9rem}.hero{padding:4.5rem 0 3rem;max-width:850px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;color:var(--mint);font-size:.76rem;font-weight:700}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.7rem,7vw,5.4rem);font-weight:500;letter-spacing:-.055em;line-height:.98;margin:.5rem 0 1.25rem}.hero h1 em{color:var(--gold);font-style:normal}.hero p{max-width:700px;color:var(--muted);font-size:1.12rem}.actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem}.button{display:inline-block;border:1px solid var(--gold);border-radius:8px;padding:.7rem 1rem;color:var(--bg);background:var(--gold);font-weight:750;text-decoration:none}.button.secondary{background:transparent;color:var(--ink);border-color:var(--line)}.badges{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.5rem}.badge{border:1px solid var(--line);background:#17221d;border-radius:100px;padding:.32rem .7rem;color:var(--mint);font-size:.82rem}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:2.2rem;align-items:start;padding:1rem 0 4rem}aside{position:sticky;top:1rem;border:1px solid var(--line);background:#141e19dd;border-radius:14px;padding:1rem}aside strong{display:block;margin:.1rem 0 .7rem}aside a{display:block;padding:.32rem 0;color:var(--muted);font-size:.9rem;text-decoration:none}aside a:hover{color:var(--gold)}section{scroll-margin-top:1.5rem;margin:0 0 2.5rem}.section-title{font-family:Georgia,"Times New Roman",serif;font-size:2rem;font-weight:500;margin:0 0 .6rem;letter-spacing:-.025em}.intro{color:var(--muted);margin:.2rem 0 1.2rem}.card{border:1px solid var(--line);background:linear-gradient(145deg,var(--panel),#141d19);border-radius:15px;padding:1.2rem;margin:1rem 0}.card h3{margin:.1rem 0 .5rem;color:var(--gold);font-size:1.08rem}.steps{counter-reset:step;list-style:none;padding:0;display:grid;gap:.75rem}.steps li{counter-increment:step;border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:1rem 1rem 1rem 3.5rem;position:relative}.steps li:before{content:counter(step);position:absolute;left:1rem;top:.92rem;border:1px solid #927a51;color:var(--gold);width:1.7rem;height:1.7rem;display:grid;place-items:center;border-radius:50%;font-weight:700}.steps b{color:var(--ink)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}.mini{border:1px solid var(--line);background:var(--panel);border-radius:12px;padding:1rem}.mini b{color:var(--mint)}.mini p{margin:.4rem 0 0;color:var(--muted)}table{border-collapse:collapse;width:100%;font-size:.94rem}th,td{text-align:left;vertical-align:top;padding:.7rem;border-bottom:1px solid var(--line)}th{color:var(--mint)}td:first-child{min-width:190px;color:var(--gold)}.note{border-left:3px solid var(--gold);background:#25271e;padding:.8rem 1rem;color:var(--muted);border-radius:0 8px 8px 0}.warn{border-left-color:var(--red);background:#2a211e}.subtle{color:var(--muted)}.tree{white-space:pre-wrap;font-size:.9rem}.urdu{font-family:system-ui,sans-serif}.urdu p,.urdu li{color:var(--muted)}footer{border-top:1px solid var(--line);padding:1.5rem 0 3rem;color:var(--muted);font-size:.9rem}@media(max-width:820px){.layout{grid-template-columns:1fr}aside{position:static}.grid{grid-template-columns:1fr}td:first-child{min-width:140px}.top{align-items:flex-start;flex-direction:column}.hero{padding-top:3rem}}
+  </style>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#top"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#e7bc72" stroke-width="2"/><path d="M16 48 30 15h3l15 33h-7l-4-10H26l-4 10zm13-15h6l-3-8z" fill="#e7bc72"/></svg><span>ALI Animation</span></a>
+    <nav aria-label="Page navigation"><a href="#install">Install</a><a href="#use">Use the Studio</a><a href="#files">Files</a><a href="#offline">Offline & help</a></nav>
+  </header>
+  <main id="top">
+    <div class="hero">
+      <div class="eyebrow">A complete getting-started guide</div>
+      <h1>From story idea<br>to <em>animated preview.</em></h1>
+      <p>Install ALI Animation Studio on your computer, use its visual controls to build and direct a story, then save a portable project and export frames or a video. The Studio runs locally in your browser and does not need an AI service.</p>
+      <div class="actions"><a class="button" href="studio/index.html">Open ALI Animation Studio</a><a class="button secondary" href="INSTALL.md">Read the install notes</a><a class="button secondary" href="studio/story-format.md">JSON format reference</a></div>
+      <div class="badges"><span class="badge">Offline after download</span><span class="badge">No AI / LLM dependency</span><span class="badge">Edit in the UI or import JSON</span><span class="badge">Windows · macOS · Linux</span></div>
+    </div>
+    <div class="layout">
+      <aside><strong>On this page</strong><a href="#requirements">What you need</a><a href="#install">Install & launch</a><a href="#use">Everyday workflow</a><a href="#save">Save & export</a><a href="#projects">Samples & template</a><a href="#files">Important files</a><a href="#offline">Offline & limitations</a><a href="#troubleshooting">Troubleshooting</a><a href="#roman-urdu">Roman Urdu quick guide</a></aside>
+      <div>
+        <section id="requirements">
+          <h2 class="section-title">What you need</h2>
+          <p class="intro">The app is a set of local files, not an installer. Download or copy the project folder first; after that, you can disconnect from the internet.</p>
+          <div class="grid">
+            <div class="mini"><b>A current desktop browser</b><p>Firefox, Chrome, or Edge. A current browser is recommended for Canvas playback and WebM recording.</p></div>
+            <div class="mini"><b>Python 3</b><p>Used only to serve the local files so sample JSON can load. Python's standard library is enough; there are no Python packages to install.</p></div>
+            <div class="mini"><b>Your own media (optional)</b><p>Voice recordings, music, sound effects, and reference art can be uploaded. Use only material you own or are allowed to use.</p></div>
+            <div class="mini"><b>No AI account or API key</b><p>The Studio does not call an LLM, image generator, cloud service, or API. It has no npm install step.</p></div>
+          </div>
+        </section>
+        <section id="install">
+          <h2 class="section-title">Install and launch</h2>
+          <ol class="steps">
+            <li><b>Download the project.</b> Get a ZIP/release or copy the repository folder onto the computer where you will create stories. Extract it. Keep the folder together so the sample projects remain available.</li>
+            <li><b>Open a terminal in the <code>studio</code> folder.</b> In File Explorer/Finder, open the project's <code>studio</code> folder. Open Terminal or Command Prompt there. You can also type <code>cd path/to/project/studio</code> in a terminal, replacing the example with your folder's actual path.</li>
+            <li><b>Start the local file server.</b> On Windows run <code>py -m http.server 8765 --bind 127.0.0.1</code>. On macOS/Linux run <code>python3 -m http.server 8765 --bind 127.0.0.1</code>. If <code>py</code> is not recognised, try <code>python -m http.server 8765 --bind 127.0.0.1</code>.</li>
+            <li><b>Open the app.</b> In the same computer's browser, visit <code>http://127.0.0.1:8765</code>. The Studio page should appear. Leave the terminal open while working; return to it and press <code>Ctrl+C</code> to stop the server when finished.</li>
+          </ol>
+          <div class="note"><b>Important:</b> Run the server from inside <code>studio/</code>, not from the repository root, and do not open <code>index.html</code> as a <code>file://</code> URL. This app loads sample projects with local browser fetches. The loopback address keeps the server on your computer; do not expose it to a public network.</div>
+        </section>
+        <section id="use">
+          <h2 class="section-title">Everyday workflow</h2>
+          <p class="intro">You can create and edit a story entirely through the Studio's buttons and form controls. JSON is optional: import it when you want to start from a prepared project or template.</p>
+          <ol class="steps">
+            <li><b>Choose a starting point.</b> Open one of the four samples from <b>Samples</b>, click <b>New project</b> for a blank story, or use <b>Import project</b> to load a compatible JSON file.</li>
+            <li><b>Write the story.</b> In <b>Story</b>, set the title, logline, genre, audience, target length, visual style/palette, story text, and character descriptions. Give characters clear, repeatable visual descriptions.</li>
+            <li><b>Direct each shot.</b> In <b>Direction</b>, set the location, action, shot duration, camera angle/framing, transition, narration, dialogue and sound notes. Use <b>Add scene</b> to create shots, then the scene controls to reorder or remove them. Keep directions short and make each shot move the story forward.</li>
+            <li><b>Add voice, sound, and art if wanted.</b> In <b>Sound &amp; voice</b>, upload narration/music and add sound effects at the relevant scene/time. In <b>Assets</b>, add reference images and choose whether they appear in the scene. Uploaded media stays in the browser session until you export a project JSON.</li>
+            <li><b>Preview and review.</b> Play or scrub the timeline; inspect every shot and check story continuity, character actions, camera, timing, captions, audio levels, and rights to uploaded media. The animation is a procedural 2D animatic preview, not a finished hand-drawn film.</li>
+            <li><b>Save a backup before closing.</b> Click <b>Export project JSON</b> and keep the downloaded file somewhere safe. Browser autosave remembers story/settings but does not preserve uploaded media; the exported project JSON can embed that media.</li>
+          </ol>
+        </section>
+        <section id="save">
+          <h2 class="section-title">Save and export</h2>
+          <div class="grid">
+            <div class="mini"><b>Project JSON</b><p>Editable project backup. Import it later with <b>Import project</b>. Uploaded media is embedded for portability, within the app's size limits.</p></div>
+            <div class="mini"><b>PNG frame</b><p>Use <b>Save frame</b> to download the currently displayed frame as an image.</p></div>
+            <div class="mini"><b>WebM video</b><p>Use <b>Export video</b> to record the animation in a browser-supported WebM format. Browser and audio support vary; test a short export first.</p></div>
+            <div class="mini"><b>Narration preview</b><p>A speech voice supplied by your operating system/browser may be available for preview. It is not a saved voice track; upload your own recording for predictable narration and an exportable voice track.</p></div>
+          </div>
+          <p class="note">For dependable backups, export the JSON after important edits and keep a second copy outside the project directory. Do not rely on browser autosave for uploaded audio or images.</p>
+        </section>
+        <section id="projects">
+          <h2 class="section-title">Samples and reusable template</h2>
+          <p>The four editable sample projects are <b>The Lantern Keeper</b>, <b>The Last Seed</b>, <b>The Moon Ferry</b>, and <b>The Brave Little Cloud</b>. They demonstrate story structure, characters, multiple camera angles, scene actions, timings, transitions, dialogue/narration, and sound cues. Open them from the Studio's <b>Samples</b> menu.</p>
+          <p>For a new story, use <b>Download blank story template</b> in the Studio, fill it in through the UI or edit its JSON in a text editor, then import it. Field names, examples, and validation details are in <a href="studio/story-format.md">the Story JSON format reference</a>.</p>
+          <p class="note">A complete video may also need final narration, music, sound effects, captions, approved artwork, credits, an opening/title card, and an end card. Check the story's rights and review the exported video in a media player/editor before publishing. Exporting a project does not grant rights to any imported material.</p>
+        </section>
+        <section id="files">
+          <h2 class="section-title">What the important files do</h2>
+          <p class="intro">You normally use the app UI. These files are for running it, understanding it, customising it, or testing it.</p>
+          <div class="card"><h3>Repository map</h3><pre class="tree">ALI Animation/
+├── ALI-Animation-Guide.html   This standalone installation/user/file guide
+├── README.md                  Project overview and quick start
+├── INSTALL.md                 Detailed installation, UI workflow, limitations
+├── LICENSE                    Main source-code licence
+├── THIRD-PARTY.md             Notices for bundled/optional materials
+├── studio/                    Offline browser application (the main product)
+│   ├── index.html             App page, controls, tabs, and layout structure
+│   ├── app.js                 UI behavior, story editing, preview and exports
+│   ├── project.mjs             Project data helpers and validation
+│   ├── studio.css             Colours, layout, and responsive visual styling
+│   ├── samples/               Four story projects plus the blank template
+│   ├── story-format.md        JSON field-by-field reference
+│   └── test-*.mjs             Automated JavaScript tests
+├── docs/                      Project portal, brand artwork, and static previews
+├── skills/                    Optional legacy assistant/production toolkit
+├── tests/                     Python tests for retained toolkit components
+└── outputs/                    Local generated exports; ignored by Git</pre></div>
+          <div class="card"><h3>Core app files</h3><table><thead><tr><th>File</th><th>Purpose</th></tr></thead><tbody>
+            <tr><td><code>studio/index.html</code></td><td>The main screen and accessible interface controls. Open it through the local server.</td></tr>
+            <tr><td><code>studio/app.js</code></td><td>Connects the controls to the project, draws/plays the story preview, handles imports, and exports project JSON, frames, and supported video.</td></tr>
+            <tr><td><code>studio/project.mjs</code></td><td>Shared project creation, validation, import/export, and data-handling functions.</td></tr>
+            <tr><td><code>studio/studio.css</code></td><td>Studio layout, responsive styling, colours, and control appearance.</td></tr>
+            <tr><td><code>studio/samples/blank-story-template.json</code></td><td>Reusable blank project structure. Prefer downloading it from the UI so you get the current format.</td></tr>
+            <tr><td><code>studio/samples/lantern-keeper.json</code></td><td>The Lantern Keeper: sample story, character, shots, direction, narration and sound cues.</td></tr>
+            <tr><td><code>studio/samples/last-seed.json</code></td><td>The Last Seed sample project and scene directions.</td></tr>
+            <tr><td><code>studio/samples/moon-ferry.json</code></td><td>The Moon Ferry sample project and scene directions.</td></tr>
+            <tr><td><code>studio/samples/brave-cloud.json</code></td><td>The Brave Little Cloud sample project and scene directions.</td></tr>
+            <tr><td><code>studio/story-format.md</code></td><td>Explains each JSON field and the supported project format.</td></tr>
+            <tr><td><code>studio/test-project.mjs</code>, <code>studio/test-static.mjs</code></td><td>Automated tests for project logic, valid samples, and expected app controls.</td></tr>
+          </tbody></table></div>
+          <div class="card"><h3>Other folders and documents</h3><table><thead><tr><th>Path</th><th>Purpose</th></tr></thead><tbody>
+            <tr><td><code>README.md</code></td><td>Short overview, start steps, features, and test commands.</td></tr>
+            <tr><td><code>INSTALL.md</code></td><td>Expanded setup and usage instructions, offline behavior, export details, and troubleshooting.</td></tr>
+            <tr><td><code>START-HERE.md</code></td><td>Entry point for the optional legacy assistant/production materials; it is not required by Studio.</td></tr>
+            <tr><td><code>COMPATIBILITY.md</code></td><td>Compatibility notes for the retained optional integrations. Not a requirement for the offline Studio.</td></tr>
+            <tr><td><code>docs/assets/</code></td><td>Project portal artwork and brand images.</td></tr>
+            <tr><td><code>docs/screenshots/</code></td><td>Static interface reference images. They are previews, not live controls or browser-captured recordings.</td></tr>
+            <tr><td><code>docs/dashboard/</code></td><td>Retained standalone review dashboard and brand presentation assets.</td></tr>
+            <tr><td><code>skills/</code></td><td>Separate, optional legacy assistant skills, references, examples, and production helpers. They may use third-party services; they are not called by Studio.</td></tr>
+            <tr><td><code>tests/</code></td><td>Tests for the retained Python toolkit; separate from the Studio's JavaScript checks.</td></tr>
+            <tr><td><code>outputs/</code></td><td>Local deliverables and generated media. This folder is intentionally ignored by Git; keep your own backups.</td></tr>
+          </tbody></table></div>
+        </section>
+        <section id="offline">
+          <h2 class="section-title">Offline use and limitations</h2>
+          <ul>
+            <li>Download the project and browser before going offline. Once files are on disk, the Studio makes no network requests and has no AI/LLM runtime dependency.</li>
+            <li>Python only serves local files; it does not install packages, create accounts, or send your projects anywhere.</li>
+            <li>The app creates a lightweight procedural 2D story animatic. It is not a full hand-drawn animation suite, AI image/video generator, voice cloning system, or professional nonlinear editor.</li>
+            <li>WebM video and audio recording depend on browser support. Uploaded narration/music are best for dependable results; system speech preview availability varies.</li>
+            <li>Uploaded media is not part of browser autosave. Export the project JSON to retain it. The app has per-file/project size limits shown in the interface.</li>
+          </ul>
+        </section>
+        <section id="troubleshooting">
+          <h2 class="section-title">Troubleshooting</h2>
+          <div class="grid">
+            <div class="mini"><b>The samples do not appear</b><p>Confirm the server was started from <code>studio/</code> and open the local <code>http://127.0.0.1:8765</code> address, not a <code>file://</code> page.</p></div>
+            <div class="mini"><b>The browser says the page is unavailable</b><p>Keep the terminal server running. If port 8765 is busy, start with 8766 and open <code>http://127.0.0.1:8766</code>.</p></div>
+            <div class="mini"><b>I cannot hear speech</b><p>Device speech preview depends on browser/OS voices. Upload a narration recording if you need predictable playback and export.</p></div>
+            <div class="mini"><b>Video export is missing or fails</b><p>Try an up-to-date desktop Firefox, Chrome, or Edge. First test a short story; project JSON and PNG frame downloads do not require video recording.</p></div>
+            <div class="mini"><b>My uploaded files disappeared</b><p>Browser autosave does not retain media. Import your last exported project JSON or upload the files again, then export a fresh JSON backup.</p></div>
+            <div class="mini"><b>I want to validate code changes</b><p>From the repository root, run <code>node --test studio/test-*.mjs</code>. Python toolkit checks use <code>python -m unittest discover -s tests</code>.</p></div>
+          </div>
+        </section>
+        <section id="roman-urdu" class="urdu">
+          <h2 class="section-title">Roman Urdu — mukhtasar tareeqa</h2>
+          <ol>
+            <li>Project download/extract karein; terminal <code>studio</code> folder mein kholain.</li>
+            <li>Windows: <code>py -m http.server 8765 --bind 127.0.0.1</code>. Mac/Linux: <code>python3 -m http.server 8765 --bind 127.0.0.1</code>.</li>
+            <li>Browser mein <code>http://127.0.0.1:8765</code> kholain. Terminal band na karein; kaam ke baad <code>Ctrl+C</code> dabayein.</li>
+            <li><b>Samples</b> se kahani chunain ya <b>New project</b> banayein. <b>Story</b> mein kahani/kirdar likhein; <b>Direction</b> mein har shot ka camera, action aur duration set karein.</li>
+            <li><b>Sound &amp; voice</b> mein apni narration/music/effects upload karein. <b>Assets</b> mein reference image add karein. <b>Preview</b> mein kahani check karein.</li>
+            <li><b>Export project JSON</b> se backup banayein; <b>Save frame</b> se PNG aur <b>Export video</b> se supported WebM file download karein. Upload ki hui media ko bachane ke liye JSON export zaroor karein.</li>
+          </ol>
+          <p>Studio offline chalta hai aur isay AI ya LLM ki zaroorat nahin. Python sirf local server ke liye hai. Existing narration preview browser ke system voice par munhasir hai; apni recording upload karna zyada bharosemand hai.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer>ALI Animation · Offline Story Studio · This guide is a single HTML file and uses no external fonts, scripts, or stylesheets. <a href="studio/index.html">Open the Studio</a> · <a href="README.md">Project overview</a></footer>
+</body>
+</html>

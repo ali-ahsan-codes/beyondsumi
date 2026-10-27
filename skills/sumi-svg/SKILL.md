@@ -3,7 +3,7 @@ name: sumi-svg
 description: Create original layered SVG scenes for Sumi when vector art is requested or image generation is unavailable; inspect a complete proof before a full batch.
 ---
 
-# Beyondsumi · SVG studio
+# ALI Animation · SVG studio
 
 SVG is the explicit vector choice or disclosed fallback, not a fourth style. Images remain preferred for detailed painted artwork when available and chosen. Explain the simpler painted detail/complex-pose fidelity without claiming SVG is inherently poor or identical to generated paintings.
 

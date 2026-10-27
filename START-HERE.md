@@ -1,4 +1,4 @@
-# Welcome to Beyondsumi
+# Welcome to ALI Animation
 
 For step-by-step help, choose [your assistant installation guide](INSTALL.md), then [make your first film](skills/sumi/references/beginner-use.md).
 

@@ -2,7 +2,7 @@
 
 You do not need to know animation settings. Your assistant handles direction and explains the decisions in plain language. Start after [installation preparation](install/shared.md).
 
-## 1. Start Beyondsumi
+## 1. Start ALI Animation
 
 Copy this into a fresh chat:
 
@@ -38,6 +38,6 @@ Say “Approve this script and direction; create the proof.” Only an explicitl
 
 ## 6. Receive and use the film
 
-You receive an HD MP4 and Beyondsumi's branded watch/download dashboard, plus editable source and review notes. Watch the actual video with sound, then use Download MP4. A local dashboard link works while its local server runs. The dashboard shows all three styles; “Make this edition” prepares a request for your chosen agent and does not secretly generate another film.
+You receive an HD MP4 and ALI Animation's branded watch/download dashboard, plus editable source and review notes. Watch the actual video with sound, then use Download MP4. A local dashboard link works while its local server runs. The dashboard shows all three styles; “Make this edition” prepares a request for your chosen agent and does not secretly generate another film.
 
 For changes say what and where, such as “At the gate, the drums are too quiet before they stop.” The assistant reuses suitable work and fixes affected areas. Keep the supplied original recording and prior export. Story captions remain visible even without narration unless you request a text-free film.

@@ -1,5 +1,5 @@
 interface:
-  display_name: "Beyondsumi"
+  display_name: "ALI Animation"
   short_description: "Sumi Original, Light and Dark"
   default_prompt: "Use $sumi to guide me from my story idea through style selection, an approved directing plan, animation, sound and final review; check first-time setup if needed."
   brand_color: "#A93A2A"
