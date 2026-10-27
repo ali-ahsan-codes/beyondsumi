@@ -1,6 +1,6 @@
-# Beyondsumi interface identity
+# ALI Animation interface identity
 
-Use the existing **Beyondsumi Brush Monogram** mark and wordmark from `assets/delivery-dashboard/`. Reuse these assets; do not generate another logo or copy film/reference branding. Exact display name: **Beyondsumi**. Use this spelling in every maintained page, heading, welcome, request, download label and skill/plugin display name. Do not shorten it to another brand spelling. Internal identifier: sumi. The brand is the page interface, not a film watermark.
+Use the existing **ALI Animation Brush Monogram** mark and wordmark from `assets/delivery-dashboard/`. Reuse these assets; do not generate another logo or copy film/reference branding. Exact display name: **ALI Animation**. Use this spelling in every maintained page, heading, welcome, request, download label and skill/plugin display name. Do not shorten it to another brand spelling. Internal identifier: sumi. The brand is the page interface, not a film watermark.
 
 `assets/delivery-dashboard/brand.css` is the shared interface theme. Carbon #161818, paper #F5F2E9 and restrained vermilion #A93A2A; serif story headings with readable system-font controls. Use the calligraphic b mark and vermilion seal, clear page title/purpose, spacious layout, visible focus, useful status/empty/error text and a responsive stage. Avoid internal command lines or unexplained technical terms in the beginner's main flow. Technical labs remain clearly labelled optional studies/archives, never extra styles.
 

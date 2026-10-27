@@ -1,17 +1,17 @@
 {
-  "name": "Beyondsumi",
-  "identity": "Brush Monogram",
-  "method": "One built-in image-generation call for the transparent symbol; native serif wordmark assembly.",
+  "name": "ALI Animation",
+  "identity": "Geometric A monogram and wordmark",
   "symbol": "logo.png",
   "wordmark": "wordmark.svg",
-  "symbol_sha256": "b05c38bdbdeb8b42666caf9d7f622e50b7fdfe8d4883664a168889c3ee613fd3",
-  "meaning": "An upward calligraphic b with an S-shaped counter and vermilion artist seal: ink becoming a moving story.",
+  "symbol_sha256": "53f77dcde05060a6c8084dc1254b287f59b9e7ac5995e79c9fbf5274bdda3a71",
+  "meaning": "A clear initial paired with a rising horizon: a simple signature for stories in motion.",
   "interface_palette": {
-    "carbon": "#161818",
-    "paper": "#F5F2E9",
-    "vermilion": "#A93A2A"
+    "carbon": "#111A17",
+    "paper": "#F5F0E5",
+    "gold": "#E7BC72",
+    "mint": "#B8D4BD"
   },
   "shared_theme": "brand.css",
   "logo_not_film_watermark": true,
-  "wordmark_format": "Self-contained SVG embedding the original PNG; lettering uses Georgia or local serif fallback. The mark is not vector traced."
+  "wordmark_format": "Self-contained SVG with local vector shapes and live system-font text; no remote resources."
 }

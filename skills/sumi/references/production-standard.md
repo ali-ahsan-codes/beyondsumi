@@ -126,4 +126,4 @@ Apply [cross-shot continuity](production-continuity.md) during scene planning an
 
 ## Viewer handoff
 
-After the review above, package the exact MP4 in the [Beyondsumi dashboard](delivery-dashboard.md), with a matching review status and direct download. Default to Full HD H.264/yuv420p MP4 and AAC sound (or intentional silence); maintain the approved aspect ratio, duration and selected30fps Original or24fps Light/Dark profile. Do not substitute a browser animation or transparent transition asset for the finished MP4. Test seek, style selection and download bytes; disclose local URL lifetime.
+After the review above, package the exact MP4 in the [ALI Animation dashboard](delivery-dashboard.md), with a matching review status and direct download. Default to Full HD H.264/yuv420p MP4 and AAC sound (or intentional silence); maintain the approved aspect ratio, duration and selected30fps Original or24fps Light/Dark profile. Do not substitute a browser animation or transparent transition asset for the finished MP4. Test seek, style selection and download bytes; disclose local URL lifetime.

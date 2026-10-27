@@ -1,6 +1,6 @@
 # Installation check scope
 
-Beyondsumi uses the Agent Skills folder format. A model name alone does not prove that an app can run scripts, use image tools or produce MP4 files. Follow the guide for the actual app and repeat the capability check on your computer.
+ALI Animation uses the Agent Skills folder format. A model name alone does not prove that an app can run scripts, use image tools or produce MP4 files. Follow the guide for the actual app and repeat the capability check on your computer.
 
 All seven local installation layouts below were checked with the suite installer: four complete skill folders, matching source file hashes and the read-only first-use report. Unchanged assets were hardlinked in the isolated test to avoid repeated sound-bank copies. No live user configuration was changed by those tests. The 39 setup/memory/routing tests also passed.
 

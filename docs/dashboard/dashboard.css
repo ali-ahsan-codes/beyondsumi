@@ -1,10 +1,10 @@
 @charset "UTF-8";
 :root {
-  --paper: var(--bs-paper);
-  --ink: var(--bs-ink);
+  --paper: var(--ali-paper);
+  --ink: var(--ali-ink);
   --muted: #6c7067;
   --line: #d7d8cb;
-  --accent: var(--bs-accent);
+  --accent: var(--ali-accent);
   --green: #4a624d;
 }
 * {

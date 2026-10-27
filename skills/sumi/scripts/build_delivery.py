@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Package existing MP4 exports in the Beyondsumi local delivery dashboard.
+"""Package existing MP4 exports in the ALI Animation local delivery dashboard.
 
 No rendering, transcoding, upload, dependency installation or review approval.
 """
@@ -97,13 +97,13 @@ def build(manifest, destination):
                             str(destination / film['poster'])], check=True)
         if evidence:
             film['review_evidence_sha256'] = sha(evidence)
-    data = {'catalogue': [{'name': item['name'], 'description': item['short_description']} for item in STYLE_DATA.values()], 'brand': 'Beyondsumi', 'title': config['title'], 'subtitle': config.get('subtitle', ''),
+    data = {'catalogue': [{'name': item['name'], 'description': item['short_description']} for item in STYLE_DATA.values()], 'brand': 'ALI Animation', 'title': config['title'], 'subtitle': config.get('subtitle', ''),
             'recreation_context': config.get('recreation_context', ''),
             'films': [f[0] for f in films]}
     raw = json.dumps(data, ensure_ascii=True, indent=2)
     (destination / 'data.js').write_text('window.SUMI_DELIVERY = ' + raw.replace('<', '\\u003c') + ';\n')
     (destination / 'DELIVERY.json').write_text(raw + '\n')
-    print(f'Beyondsumi delivery: {destination.resolve()}')
+    print(f'ALI Animation delivery: {destination.resolve()}')
     print(f'Run: python3 "{destination.resolve() / "serve.py"}" --port 4260')
     print('Open http://127.0.0.1:4260/ on this computer. This is not a hosted/shareable URL.')
     return data

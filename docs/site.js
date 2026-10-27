@@ -1,6 +1,6 @@
 (() => {
   "use strict";
-  const data = window.BEYONDSUMI;
+  const data = window.ALI_ANIMATION;
   const root = document;
   const byId = (id) => root.getElementById(id);
   const video = byId("demo-video");

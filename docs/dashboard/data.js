@@ -1,9 +1,9 @@
 (() => {
-  const config = window.BEYONDSUMI;
+  const config = window.ALI_ANIMATION;
   const demo = config.demos.find((d) => d.id === "svg");
   const local = ["localhost", "127.0.0.1", ""].includes(location.hostname);
   window.SUMI_DELIVERY = {
-    brand: "Beyondsumi",
+    brand: "ALI Animation",
     title: "The Last Blossom",
     subtitle:
       "A Sumi Dark story made with SVG artwork, music, sound effects and captions.",
@@ -27,7 +27,7 @@
         status: "demo",
         review_note:
           "A finished showcase film. Start your own project with the included skill and guides.",
-        file: local ? "media/beyondsumi-svg.mp4" : config.mediaBase + demo.file,
+        file: local ? "media/ali-animation-svg.mp4" : config.mediaBase + demo.file,
         download_name: demo.file,
         poster: "media/last-blossom.jpg",
       },

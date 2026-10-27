@@ -4,7 +4,7 @@ A chat model and the app running it are different things. First ask: “Can you 
 
 For ChatGPT desktop with local Work/Codex capabilities:
 
-1. Extract the Beyondsumi ZIP and open/select that local folder in the desktop app.
+1. Extract the ALI Animation ZIP and open/select that local folder in the desktop app.
 2. Follow [the local Codex skills route](codex.md), or ask the assistant to read `skills/sumi/SKILL.md` directly from the shared folder.
 3. Paste the [first-use request](../beginner-use.md). Check that the assistant actually reads the skill and reports its available tools.
 4. If it cannot access the folder or render with the required tools, use a capable local agent for production. Chat can still help develop the story, script and direction.

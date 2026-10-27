@@ -1,6 +1,6 @@
 # Source and asset notices
 
-The original Python music bundled in skills/sumi/assets/sound-library/bundled-bank and original generated audio use the adjacent ORIGINAL-AUDIO-LICENSE.txt. It permits use, modification, redistribution and commercial productions with its notice, without an additional Beyondsumi audio fee. Synthetic audio is not a field-recording or exclusivity guarantee.
+The original Python music bundled in skills/sumi/assets/sound-library/bundled-bank and original generated audio use the adjacent ORIGINAL-AUDIO-LICENSE.txt. It permits use, modification, redistribution and commercial productions with its notice, without an additional ALI Animation audio fee. Synthetic audio is not a field-recording or exclusivity guarantee.
 
 Retain the included MIT notice for the procedural kit derived from whaleyxbt/claude-motion. Remotion, React, TypeScript, browser/FFmpeg, optional assistants, Voicebox and selected voice/image models retain their own licenses. Check the relevant license for your use; the repository license does not replace it. No dependency directories or models are vendored.
 

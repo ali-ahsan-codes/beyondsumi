@@ -1,13 +1,13 @@
-window.BEYONDSUMI = {
+window.ALI_ANIMATION = {
   version: "1.0.1",
-  owner: "beyondtahir",
-  repo: "beyondsumi",
-  repository: "https://github.com/beyondtahir/beyondsumi",
-  website: "https://beyondtahir.github.io/beyondsumi/",
+  owner: "ALI Animation",
+  repo: "ALI Animation",
+  repository: "https://github.com/ali-ahsan-codes/ali-animation",
+  website: "https://ali-ahsan-codes.github.io/ali-animation/",
   download:
-    "https://github.com/beyondtahir/beyondsumi/releases/download/v1.0.1/beyondsumi-v1.0.1.zip",
+    "https://github.com/ali-ahsan-codes/ali-animation/releases/download/v1.0.1/ali-animation-v1.0.1.zip",
   mediaBase:
-    "https://github.com/beyondtahir/beyondsumi/releases/download/v1.0.0/",
+    "https://github.com/ali-ahsan-codes/ali-animation/releases/download/v1.0.0/",
   demos: [
     {
       id: "original",
@@ -24,7 +24,7 @@ window.BEYONDSUMI = {
         "Contextual painted scenes, complete action poses, expressive faces and small hair, cloth and environment movements. A 30 fps film with up to 20 designed motion states per animated second.",
       best: "Emotional stories · historical drama · character journeys",
       poster: "assets/posters/original.jpg",
-      file: "beyondsumi-original.mp4",
+      file: "ali-animation-original.mp4",
       width: 1920,
       height: 1080,
       fps: 30,
@@ -48,7 +48,7 @@ window.BEYONDSUMI = {
         "Colourful brush-built artwork, connected action poses, readable camera choices and living skies, grass and light. Character states pair on a 24 fps timeline.",
       best: "Fables · children’s stories · romance · documentaries",
       poster: "assets/posters/light.jpg",
-      file: "beyondsumi-light.mp4",
+      file: "ali-animation-light.mp4",
       width: 1920,
       height: 1080,
       fps: 24,
@@ -72,7 +72,7 @@ window.BEYONDSUMI = {
         "Large brush and splash-built forms, camera-led face and detail reveals, selective dark red, atmospheric movement and paired character states at 24 fps.",
       best: "Horror · mysteries · dark stories · historical suspense",
       poster: "assets/posters/dark.jpg",
-      file: "beyondsumi-dark.mp4",
+      file: "ali-animation-dark.mp4",
       width: 1920,
       height: 1080,
       fps: 24,
@@ -96,7 +96,7 @@ window.BEYONDSUMI = {
         "Layered SVG geometry, supported character parameters, petals and fog, camera framing and a timed soundtrack. SVG is an artwork option within the three styles, not a fourth style.",
       best: "API-light experiments · graphic shorts · self-contained vector scenes",
       poster: "assets/posters/svg.jpg",
-      file: "beyondsumi-svg.mp4",
+      file: "ali-animation-svg.mp4",
       width: 1920,
       height: 1080,
       fps: 24,
@@ -107,8 +107,8 @@ window.BEYONDSUMI = {
   ],
   creator: {
     name: "Muhammad Tahir Ashraf",
-    brand: "Beyond Tahir",
-    site: "https://beyondtahir.com",
-    github: "https://github.com/beyondtahir",
+    brand: "ALI Animation",
+    site: "https://github.com/ali-ahsan-codes/ali-animation",
+    github: "https://github.com/ali-ahsan-codes",
   },
 };

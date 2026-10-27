@@ -3,7 +3,7 @@
 <h1 align="center">ALI Animation</h1>
 <p align="center"><strong>Offline Story Studio — direct a story, animate a preview, export a video.</strong><br>Local-first. No AI, account, API key, or internet connection required at runtime.</p>
 
-**[Open the Studio](studio/index.html)** · **[Install and use it offline](INSTALL.md)** · **[Story JSON format](studio/story-format.md)** · **[4 sample projects](studio/samples/)** · **[UI preview](docs/screenshots/ali-animation-interface-preview.png)**
+**[Open the Studio](studio/index.html)** · **[Standalone HTML installation & user guide](ALI-Animation-Guide.html)** · **[Install notes](INSTALL.md)** · **[Story JSON format](studio/story-format.md)** · **[4 sample projects](studio/samples/)** · **[UI preview](docs/screenshots/ali-animation-interface-preview.png)**
 
 ALI Animation is a self-contained browser app for story-first animation. Write the story and characters, direct scene-by-scene camera angles, add voice/music/effects and reference art, preview the animation, and export a portable JSON project, PNG frames, and WebM video. Projects and media remain on your device.
 
@@ -32,4 +32,4 @@ python -m unittest discover -s tests
 
 ## Existing repository material
 
-The existing `skills/` directories contain the earlier Beyondsumi/Sumi assistant plugin, studies, examples and production recipes. They are retained as legacy source; ALI Animation Studio does not call or require that assistant workflow. Only rename/update those integrations separately if they are still needed.
+The existing `skills/` directories contain the earlier ALI Animation/Sumi assistant plugin, studies, examples and production recipes. They are retained as legacy source; ALI Animation Studio does not call or require that assistant workflow. Only rename/update those integrations separately if they are still needed.

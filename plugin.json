@@ -6,7 +6,7 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Beyondsumi",
+        "displayName": "ALI Animation",
         "shortDescription": "Guided ink animation studio",
         "longDescription": "Write and approve the story and direction, prepare complete character references, then create Sumi Original, Sumi Light or Sumi Dark. Japanese Sumi identity throughout, with local sound and review. Earlier movement methods remain historical techniques.",
         "capabilities": [],

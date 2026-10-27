@@ -1,6 +1,6 @@
 'use strict';
 const proof=window.SUMI_PROOF;
-document.title=proof.title+' · Beyondsumi';
+document.title=proof.title+' · ALI Animation';
 document.getElementById('title').textContent=proof.title;
 document.getElementById('before').textContent=proof.before_label;
 document.querySelector('progress').max=proof.duration;

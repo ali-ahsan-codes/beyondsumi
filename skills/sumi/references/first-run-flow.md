@@ -4,7 +4,7 @@ For a complete beginner, use [the simple usage guide](beginner-use.md); installa
 
 This is the single setup conversation. Read external [memory](memory.md); preserve it across upgrades. A passive ZIP cannot run itself on every agent. The CLI installer can check requirements immediately; a host without an install hook does this on first invocation. Mark the welcome shown only after displaying it.
 
-1. Show the short `assets/WELCOME.txt` in the user's language. Explain that Beyondsumi helps write, direct, animate, caption and score a story, with script/direction approval before production.
+1. Show the short `assets/WELCOME.txt` in the user's language. Explain that ALI Animation helps write, direct, animate, caption and score a story, with script/direction approval before production.
 2. Run `scripts/first_run.py` read-only. Inspect actual callable image/MCP tools in the host; Python cannot discover hidden assistant capabilities. Report available/missing/unknown, purpose, free/paid status and one next action. Failed detection is unknown, not proof of absence.
 3. Use the short style descriptions returned by the catalogue. Original: painted Japanese stories with richer character acting; Light: colourful romance, children's/general stories and documentaries; Dark: horror/mystery with dramatic ink, red and camera. Respect any existing selection.
 4. Ask which actual available image tool/model to use, or reuse an explicit saved choice after checking availability. A chat model name alone proves nothing. Images are first choice; SVG is explicitly selected or offered when images are unavailable. Offer connected image MCP/API, supplied artwork or another capable host before a disclosed SVG fallback. Follow [image routing](image-capabilities.md).

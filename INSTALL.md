@@ -1,5 +1,7 @@
 # ALI Animation — install and use offline
 
+For the standalone, illustrated HTML walkthrough, open [ALI-Animation-Guide.html](ALI-Animation-Guide.html).
+
 **ALI Animation Studio** is a local browser-based animation/storyboard app. It has no AI, account, API key, npm package, Python package, or network dependency. Browser preview, project JSON and supported WebM recording happen on your own computer. The older `skills/` assistant workflow in this repository is a separate legacy toolkit; you do not need it for ALI Animation Studio.
 
 ## Quick install

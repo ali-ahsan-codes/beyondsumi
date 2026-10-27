@@ -1,8 +1,8 @@
 # Before installation
 
-Beyondsumi is a set of instructions, helpers and assets used by an AI assistant. It is not a separate chat model. Install the assistant you want separately; using a model with the same name inside another app does not use that assistant's skill folder.
+ALI Animation is a set of instructions, helpers and assets used by an AI assistant. It is not a separate chat model. Install the assistant you want separately; using a model with the same name inside another app does not use that assistant's skill folder.
 
-1. Download the Beyondsumi user ZIP supplied with the repo/release.
+1. Download the ALI Animation user ZIP supplied with the repo/release.
 2. Extract it. Open the extracted folder that contains `install.py` and `skills`. Do not install the private owner pack or any personal voice/key files.
 3. Choose the guide for your app: [Codex](codex.md), [Claude Code](claude.md), [Kimi](kimi.md), [Gemini CLI](gemini.md), [OpenClaw](openclaw.md), [Hermes](hermes.md) or [ChatGPT/chat apps](chatgpt.md).
 4. If using a terminal, first check `python3 --version` (macOS/Linux) or `py -3 --version` (Windows). If Python is absent, ask for the official installation instructions and approve that separately. Do not paste an API key into chat or terminal commands.
