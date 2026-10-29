@@ -40,11 +40,12 @@
           <h2 class="section-title">Install and launch</h2>
           <ol class="steps">
             <li><b>Download the project.</b> Get a ZIP/release or copy the repository folder onto the computer where you will create stories. Extract it. Keep the folder together so the sample projects remain available.</li>
-            <li><b>Open a terminal in the project root.</b> This is the folder containing <code>install.py</code>. The Studio is model-free: no AI model, account, API key, cloud service, or Python package is required.</li>
-            <li><b>Launch the Studio.</b> On Windows run <code>py -3 install.py</code> (or <code>python install.py</code> if using an activated virtual environment). On macOS/Linux run <code>python3 install.py</code>.</li>
-            <li><b>Use the browser.</b> The launcher starts a loopback-only local server and tries to open the Studio automatically. If needed, visit the URL printed in the terminal (normally <code>http://127.0.0.1:8765</code>). Keep the terminal open during use and press <code>Ctrl+C</code> to stop the server.</li>
+            <li><b>Keep the project together.</b> The root folder contains the launcher and the <code>studio/</code> app. ALI Animation is a manual workflow: you provide the script, shot actions, camera angles, timings, and any media; the app does not generate them with AI.</li>
+            <li><b>Windows, first run:</b> double-click <code>install.bat</code>. It checks Python and the project files, then launches the Studio. For later sessions, double-click <code>start.bat</code>. These batch files install no packages and download no models.</li>
+            <li><b>macOS/Linux or terminal use:</b> open a terminal in the project root (the folder containing <code>install.py</code>) and run <code>python3 install.py</code> on macOS/Linux, or <code>python install.py</code> on Windows.</li>
+            <li><b>Use the browser.</b> The launcher starts a loopback-only local server and tries to open the Studio automatically. If needed, visit the URL printed by the launcher (normally <code>http://127.0.0.1:8765</code>). Keep its window open during use and press <code>Ctrl+C</code> to stop the server.</li>
           </ol>
-          <div class="note"><b>Optional manual alternative:</b> If you prefer not to use the launcher, run <code>py -m http.server 8765 --bind 127.0.0.1</code> (Windows) or <code>python3 -m http.server 8765 --bind 127.0.0.1</code> (macOS/Linux) from inside <code>studio/</code>. Do not open <code>index.html</code> as a <code>file://</code> URL; the app loads samples with local browser fetches. The server is local to your computer and should not be exposed to a public network.</div>
+          <div class="note"><b>No AI or cloud:</b> The launchers use Python's standard library and only serve files on your computer. Keep the downloaded project folder and Python installed; after that, Studio use needs no internet. Do not open <code>index.html</code> as a <code>file://</code> URL because sample loading uses local browser fetches.</div>
         </section>
         <section id="use">
           <h2 class="section-title">Everyday workflow</h2>
@@ -52,7 +53,7 @@
           <ol class="steps">
             <li><b>Choose a starting point.</b> Open one of the four samples from <b>Samples</b>, click <b>New project</b> for a blank story, or use <b>Import project</b> to load a compatible JSON file.</li>
             <li><b>Write the story.</b> In <b>Story</b>, set the title, logline, genre, audience, target length, visual style/palette, story text, and character descriptions. Give characters clear, repeatable visual descriptions.</li>
-            <li><b>Direct each shot.</b> In <b>Direction</b>, set the location, action, shot duration, camera angle/framing, transition, narration, dialogue and sound notes. Use <b>Add scene</b> to create shots, then the scene controls to reorder or remove them. Keep directions short and make each shot move the story forward.</li>
+            <li><b>Direct each shot.</b> In <b>Direction</b>, set the location, action, shot duration, transition, narration, dialogue and sound notes. Choose a camera suggestion or type your own angle/framing text. Use <b>Add scene</b> to create shots, then the scene controls to reorder or remove them. Keep directions short and make each shot move the story forward.</li>
             <li><b>Add voice, sound, and art if wanted.</b> In <b>Sound &amp; voice</b>, upload narration/music and add sound effects at the relevant scene/time. In <b>Assets</b>, add reference images and choose whether they appear in the scene. Uploaded media stays in the browser session until you export a project JSON.</li>
             <li><b>Preview and review.</b> Play or scrub the timeline; inspect every shot and check story continuity, character actions, camera, timing, captions, audio levels, and rights to uploaded media. The animation is a procedural 2D animatic preview, not a finished hand-drawn film.</li>
             <li><b>Save a backup before closing.</b> Click <b>Export project JSON</b> and keep the downloaded file somewhere safe. Browser autosave remembers story/settings but does not preserve uploaded media; the exported project JSON can embed that media.</li>
@@ -79,6 +80,8 @@
           <p class="intro">You normally use the app UI. These files are for running it, understanding it, customising it, or testing it.</p>
           <div class="card"><h3>Repository map</h3><pre class="tree">ALI Animation/
 ├── ALI-Animation-Guide.html   This standalone installation/user/file guide
+├── install.bat                 First-run check and Windows launcher
+├── start.bat                   One-click Windows Studio launcher
 ├── install.py                 Model-free local Studio launcher
 ├── README.md                  Project overview and quick start
 ├── INSTALL.md                 Detailed installation, UI workflow, limitations
@@ -135,7 +138,7 @@
         <section id="troubleshooting">
           <h2 class="section-title">Troubleshooting</h2>
           <div class="grid">
-            <div class="mini"><b>The samples do not appear</b><p>Use the launcher from the project root (the folder containing <code>install.py</code>), or use the manual server command above from <code>studio/</code>. Open the printed local address, not a <code>file://</code> page.</p></div>
+            <div class="mini"><b>The samples do not appear</b><p>Start with <code>install.bat</code>/<code>start.bat</code> on Windows or <code>python3 install.py</code> on macOS/Linux from the project root. Open the printed local address, not a <code>file://</code> page.</p></div>
             <div class="mini"><b>The browser says the page is unavailable</b><p>Keep the terminal open while the Studio is in use. The launcher selects another local port if 8765 is busy and prints its URL; use that exact address.</p></div>
             <div class="mini"><b>I cannot hear speech</b><p>Device speech preview depends on browser/OS voices. Upload a narration recording if you need predictable playback and export.</p></div>
             <div class="mini"><b>Video export is missing or fails</b><p>Try an up-to-date desktop Firefox, Chrome, or Edge. First test a short story; project JSON and PNG frame downloads do not require video recording.</p></div>
@@ -146,9 +149,9 @@
         <section id="roman-urdu" class="urdu">
           <h2 class="section-title">Roman Urdu — mukhtasar tareeqa</h2>
           <ol>
-            <li>Project download/extract karein; terminal project root mein kholain, jahan <code>install.py</code> mojood hai.</li>
-            <li>Windows: <code>py -3 install.py</code>. Mac/Linux: <code>python3 install.py</code>.</li>
-            <li>Launcher browser khol dega; zaroorat par terminal mein diya gaya local URL kholain. Terminal band na karein; kaam ke baad <code>Ctrl+C</code> dabayein.</li>
+            <li>Project download aur extract karein. Python 3.8+ aik dafa install hona chahiye; packages ya AI model ki zaroorat nahin.</li>
+            <li>Windows par pehli dafa <code>install.bat</code> double-click karein; baad mein <code>start.bat</code>. Mac/Linux par project root mein terminal khol kar <code>python3 install.py</code> chalayein.</li>
+            <li>Story aur camera angles khud likhein. Launcher ka window khula rakhein; agar browser khud na khule to printed local URL kholain. Band karne ke liye <code>Ctrl+C</code> dabayein.</li>
             <li><b>Samples</b> se kahani chunain ya <b>New project</b> banayein. <b>Story</b> mein kahani/kirdar likhein; <b>Direction</b> mein har shot ka camera, action aur duration set karein.</li>
             <li><b>Sound &amp; voice</b> mein apni narration/music/effects upload karein. <b>Assets</b> mein reference image add karein. <b>Preview</b> mein kahani check karein.</li>
             <li><b>Export project JSON</b> se backup banayein; <b>Save frame</b> se PNG aur <b>Export video</b> se supported WebM file download karein. Upload ki hui media ko bachane ke liye JSON export zaroor karein.</li>

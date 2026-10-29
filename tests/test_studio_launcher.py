@@ -81,6 +81,19 @@ class StudioLauncherTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'port 9000'):
                 launcher.launch_studio(ROOT, port=9000, open_browser=False)
 
+    def test_windows_launchers_run_only_the_local_studio(self):
+        start = (ROOT / 'start.bat').read_text().lower()
+        install = (ROOT / 'install.bat').read_text().lower()
+        self.assertIn('cd /d "%~dp0"', start)
+        self.assertIn('py -3 install.py', start)
+        self.assertIn('python install.py', start)
+        self.assertIn('sys.version_info >= (3, 8)', start)
+        self.assertNotIn('pip install', start)
+        self.assertNotIn('--skills-root', start)
+        self.assertIn('call "%~dp0start.bat"', install)
+        self.assertIn('no ai model', install)
+        self.assertNotIn('pip install', install)
+
 
 if __name__ == '__main__':
     unittest.main()

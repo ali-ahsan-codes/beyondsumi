@@ -1,15 +1,14 @@
 # ALI Animation — start here
 
-## Model-free Studio (recommended)
+## Model-free, manual Studio
 
-ALI Animation Studio is the offline story-animation app. It does not need an AI model, account, API key, package install, or internet connection after the files are downloaded.
+This is a manual story/animatic workflow: **you** provide the script, characters, scene actions, camera angles, timing, and any voice/music/art. The Studio does not ask an AI to create or complete these items. It runs locally without a model, account, API key, package install, or internet connection after download.
 
-From the project root, run:
+- **Windows, first run:** double-click `install.bat`. It checks that Python and the project files are present, then launches the Studio. Next time, double-click `start.bat`.
+- **Windows terminal alternative:** from the project root run `python install.py` (or `py -3 install.py`).
+- **macOS/Linux:** from the project root run `python3 install.py`.
 
-- **Windows:** `py -3 install.py` (or `python install.py` if your virtual environment is active)
-- **macOS/Linux:** `python3 install.py`
-
-The launcher starts a loopback-only local server and opens the Studio in your browser. Leave the terminal open while using it; press **Ctrl+C** to stop it. If needed, open the URL printed in the terminal. See [INSTALL.md](INSTALL.md) and the [standalone HTML guide](ALI-Animation-Guide.html) for UI instructions and file explanations.
+The launcher opens the Studio in your browser and serves it only on your computer. Leave its window open while using the app; press **Ctrl+C** to stop it. If needed, visit the local URL printed in that window. See [INSTALL.md](INSTALL.md) and the [standalone HTML guide](ALI-Animation-Guide.html) for the steps to write a story, set shot angles, import your own media, preview, and export.
 
 ## Optional legacy assistant skills
 

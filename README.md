@@ -9,16 +9,19 @@ ALI Animation is a self-contained browser app for story-first animation. Write t
 
 ## Start in minutes — no AI model
 
-1. Download/extract the project and install Python 3.8+ (standard library only).
-2. From the project root, run `python install.py` (Windows: `py -3 install.py`; macOS/Linux: `python3 install.py`). This starts the local Studio server and opens your browser.
-3. If it does not open automatically, visit the printed `http://127.0.0.1:...` address. Press **Ctrl+C** in the terminal to stop the server.
+ALI Animation Studio is for a fully manual workflow: you write the script, choose each shot's camera angle and duration, and supply any voice/music/art yourself. It does not generate a script, angle, image, or voice with AI.
 
-`install.py` with no options launches the offline Studio. `--skills-root` is only for the separate optional assistant skills and is not needed for ALI Animation Studio. See [INSTALL.md](INSTALL.md) or the [standalone HTML guide](ALI-Animation-Guide.html).
+1. Download/extract the project and have Python 3.8+ installed. No Python packages are needed.
+2. **Windows:** double-click `install.bat` for the first-run check and launch; later, double-click `start.bat`. You can also run `python install.py` (or `py -3 install.py`) from the project root.
+3. **macOS/Linux:** from the project root run `python3 install.py`.
+4. The local Studio opens in your browser. If it does not, visit the URL printed by the launcher (normally `http://127.0.0.1:8765`). Keep the launcher window open while using the app; press **Ctrl+C** there to stop it.
+
+The launchers only check for Python and start the local app; they do not download models, install packages, or contact a cloud service. `--skills-root` is separate optional legacy tooling and is not needed for Studio. See [INSTALL.md](INSTALL.md) or the [standalone HTML guide](ALI-Animation-Guide.html).
 
 ## What is included
 
 - **Four complete story samples:** The Lantern Keeper, The Last Seed, The Moon Ferry and The Brave Little Cloud. Each has three shots, a story, characters, camera directions, narration/dialogue, sound cues, transitions and timing.
-- **All-UI project editing:** story, logline, characters, genre, target length, visual style, palette, camera menu, shot timing, narration, dialogue, transitions, sound cues and reference art.
+- **All-UI project editing:** story, logline, characters, genre, target length, visual style, palette, freely typed camera angles (with suggestions), shot timing, narration, dialogue, transitions, sound cues and reference art.
 - **Import/export:** fill the UI or import a versioned JSON file; export the editable project with uploaded media embedded. A blank project template and field-by-field format guide are included.
 - **Local preview + exports:** procedural 2D animation in Canvas, timeline playback, PNG stills, and browser-generated WebM video. Uploaded narration/music and timed SFX can accompany the video.
 - **No app dependencies:** Python's standard library serves the files. No packages, AI, service, key, or online API are used by the Studio.
